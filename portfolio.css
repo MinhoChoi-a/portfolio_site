@@ -1,0 +1,68 @@
+:root {
+    --bg_main: #82cdc8;
+    --text_main: #022249;
+    --accent_main: #f27d42;
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    background: url("./img/back.jpg");
+    background-size: cover;
+    margin: auto;
+    top: 0;
+    display: table;
+    
+}
+
+.intro .inner {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+ 
+.intro .inner #content {
+    max-width: 100%;
+    margin: 0 atuo;
+    text-align: center;
+    animation-duration: 2s;
+    color: var(--text_main);
+}
+
+.intro .inner #content h1 {
+    font-size: 2em;
+}
+
+.intro .inner #content button{
+    color: var(--text_main);
+    font-size: 2em;
+    background: none;
+    border: 2px solid var(--accent_main);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.intro .inner #content button:hover{
+    color: var(--bg_main);
+    background: var(--text_main);
+    border: 2px solid var(--text_main);
+    transition-duration: 0.5s;    
+}
+
+
+.works {
+    position:relative;
+    height:100%;
+    width:100%;
+    background: url('./img/back2.jpg');    
+}
