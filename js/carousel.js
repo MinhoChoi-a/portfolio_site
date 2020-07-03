@@ -13,6 +13,15 @@ const slideWidth = slideSize.width;
 // slides[1].style.left = slideWidth*1 + 'px';
 // slides[2].style.left = slideWidth*2 + 'px';
 
+window.onload = movingImage;
+
+function movingImage() {
+    const image = document.querySelector('.intro img');
+    console.log(image);
+    image.style.transform = 'translateX(-1000px)';
+}
+
+
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
 };
