@@ -19,6 +19,7 @@ function movingImage() {
     const image = document.querySelector('.intro img');
     console.log(image);
     image.style.transform = 'translateX(-1000px)';
+
 }
 
 
@@ -104,3 +105,22 @@ dotsNavs.addEventListener('click', e => {
     
 })
 
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector('.mainNav');
+
+var intro = document.querySelector('.intro');
+
+var height = intro.offsetHeight;
+
+function myFunction() {
+  if (window.pageYOffset >= height-50) {
+    document.querySelector('.mainNav').style.display='block';
+    navbar.classList.add("sticky")
+    
+  } else {
+    document.querySelector('.mainNav').style.display='none';
+    navbar.classList.remove("sticky");
+  }
+}
