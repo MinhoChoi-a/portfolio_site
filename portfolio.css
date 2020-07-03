@@ -71,14 +71,16 @@ html, body {
 .carousel {
     position: relative;
     height: 300px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
 }
 
 .carousel__track-container {
     background: white;
     height: 100%;
+    width: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .carousel_img {
@@ -91,6 +93,9 @@ html, body {
     list-style: none;
     padding: 0;
     margin: 0;
+    transition: transform 250ms ease-in;    
+
+    height: 100%;
 }
 
 .carousel__slide {
@@ -116,7 +121,7 @@ html, body {
     transition-duration: 0.5s;
 }
 
-.carousel__button--right {
+.carousel__button--right{
     right: 0px;
 }
 
@@ -139,6 +144,8 @@ html, body {
     margin: 0 12px;
 }
 
-.carousel__indicator.current-slide {
+.carousel__indicator.current {
     background: var(--text_main);
 }
+
+.is-hidden {display: none}
