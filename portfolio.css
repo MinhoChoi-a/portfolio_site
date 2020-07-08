@@ -1,5 +1,6 @@
 :root {
     --bg_main: #82cdc8;
+    --bg : #c4e6e5;
     --text_main: #022249;
     --accent_main: #f27d42;
 }
@@ -28,6 +29,7 @@ button {
     height: 100%;
     width: 200%;
     transition: 60s;
+    z-index: -1;
 }
 
 @media screen and (max-width: 500px) {
@@ -71,31 +73,30 @@ button {
     transition-duration: 0.5s;    
 }
 
-.body2 {
-    height: 100%;
-
-}
 
 .mainNav {
     z-index: 999;
     background-color: var(--bg_main);
     display: none;
-    transition-duration: 1.5s;    
+    
 }
 
 .mainNav.sticky {
     position: fixed;
     top: 0;
     width: 100%;
+    
 }
 
+.body2 {
+    height: 100vh;
+    background: #c4e6e5;
+}
 
 .works {
     position:relative;
-    padding-top: 50px;
-    height:100%;
     width:100%;
-    background: url('./img/back2.jpg');    
+    transition-duration: 1s;    
 }
 
 /* carousel */
@@ -107,34 +108,44 @@ button {
 }
 
 .carousel__track-container {
-    background: transparent;
     height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
 }
 
+/*
 .carousel_img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     max-width: none;
 }
+*/
 
 .carousel__track {
     list-style: none;
     padding: 0;
     margin: 0;
     transition: transform 1.2s ease-in;
-
     height: 100%;
 }
+
 
 .carousel__slide {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
+
+    background: url('img/back3.jpg');
+    background-position: cover;
+    
+    max-width: none;
+
+    display: flex;
+    justify-content: center;
+   
 }
 
 .carousel__button {
@@ -162,6 +173,7 @@ button {
 }
 
 .carousel__nav {
+    transform: translateY(-100%);
     display: flex;
     justify-content: center;
     padding: 10px 0;
@@ -181,3 +193,65 @@ button {
 }
 
 .is-hidden {display: none}
+
+.carousel__track .carousel__slide .content {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    background-color: rgba(255,255,255, 0.5);
+    padding: 30px;
+    
+}
+
+.carousel__track .carousel__slide .content .link{
+
+    color: var(--text_main);
+    background: var(--bg);
+    border: 2px solid var(--accent_main);
+    border-radius: 50px;
+    padding: 2px 12px 2px 12px;
+    bottom:0;
+
+}
+
+/*port list*/
+.work-list {
+    margin-top: 50px;
+    position: relative;
+    
+}
+
+.work-list ul{
+    height: 100%;
+    margin-bottom: 15px;
+    
+    display: table;
+    overflow: auto;
+    
+}
+.work-list li{
+    float:left;
+    list-style: none;
+    
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+
+}
+
+.work-list .list #head{
+    font-size: 20px;
+    background-color: var(--text_main);
+    color: var(--bg);
+    padding: 2px 12px 2px 12px;
+}
+
+.work-list .list #tag{
+    font-size: 15px;
+    background-color: var(--accent_main);
+    margin-left: 10px;
+    padding: 2px 12px 2px 12px;
+    color: var(--text_main);
+}
+
+

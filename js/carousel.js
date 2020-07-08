@@ -117,10 +117,20 @@ var height = intro.offsetHeight;
 function myFunction() {
   if (window.pageYOffset >= height-50) {
     document.querySelector('.mainNav').style.display='block';
+    document.querySelector('.works').style.padding='50px 0px 0px 0px';
     navbar.classList.add("sticky")
     
   } else {
     document.querySelector('.mainNav').style.display='none';
+    document.querySelector('.works').style.padding='0px 0px 0px 0px';
     navbar.classList.remove("sticky");
   }
 }
+
+
+const moveButton = document.querySelector('.intro button');
+const moveTarget = document.querySelector('.intro').offsetHeight;
+
+moveButton.addEventListener('click', e => {
+    scrollTo({top:moveTarget,behavior:'smooth'});
+})
