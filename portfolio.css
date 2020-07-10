@@ -229,7 +229,7 @@ button {
     font-size: 20px;
     background: var(--text_main);
     color: var(--bg);
-    
+    box-shadow: 5px 5px var(--bg_main);
 }
 
 .work-list .list #head:hover{
@@ -238,8 +238,6 @@ button {
     transition: 0.3s ease-out;
     
 }
-
-
 
 .work-list .list #head Button{
     background: none;
@@ -260,8 +258,84 @@ button {
     margin-left: 10px;
     padding: 2px 12px 2px 12px;
     color: var(--text_main);
+    border: 0.1em solid var(--bg);
+    
 }
 
+
+.body3 {
+    height: 100vh;
+    background: #c4e6e5;
+    padding-top: 100px;
+    position: relative;
+
+}
+
+.body3 .basic_port {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.body3 .basic_port img{
+    
+    height: 200px;
+}
+
+.body3 .basic_port .text{
+    
+    padding: 20px;
+    width: 350px;
+    height: 100%;
+}
+
+.body3 .learning {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.body3 .learning ul{
+    list-style: none;
+}
+
+.body3 .learning #title {
+    list-style: none;
+    padding-left: 20px;   
+    width: 500px;
+    font-size: 20px;
+    background: var(--text_main);
+    color: var(--bg);
+    box-shadow: 5px 5px var(--bg_main);
+}
+
+.body3 .learning #description, #description_p{
+    margin-top: 15px;
+}
+
+.body3 .learning #description li, #description_p li {
+    margin-bottom: 10px;
+}
+
+.body3 .learning #description_p li {
+    background: var(--text_main);
+    color: var(--bg_main);
+
+}
+
+.body3 .learning #description_p li span{
+    background: var(--accent_main);
+    z-index: 99;
+    
+}
 
 
 @media screen and (max-width: 500px) {
