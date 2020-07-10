@@ -5,8 +5,20 @@ const prevButton = document.querySelector('.carousel__button--left');
 const dotsNavs = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNavs.children);
 
+const worksButton = document.querySelector('.work-list');
+const buttons = document.querySelectorAll('.work__button');
+var buttonsArray = Array.from(buttons);
+
 const slideSize = slides[0].getBoundingClientRect();
 const slideWidth = slideSize.width;
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.querySelector('.mainNav');
+
+var intro = document.querySelector('.intro');
+
+const height = intro.offsetHeight;
 
 // arrange the slides next to one another
 // slides[0].style.left = slideWidth*0 + 'px';
@@ -17,9 +29,7 @@ window.onload = movingImage;
 
 function movingImage() {
     const image = document.querySelector('.intro img');
-    console.log(image);
     image.style.transform = 'translateX(-1000px)';
-
 }
 
 
@@ -103,16 +113,34 @@ dotsNavs.addEventListener('click', e => {
     updateDots(currentDot, targetDot);
     hideShowArrow(slides, prevButton, nextButton, targetIndex); 
     
-})
+});
+
+worksButton.addEventListener('click', e=> {
+    const targetWork = e.target.closest('button');
+    
+    if(!targetWork) return;
+
+    const currentSlide = track.querySelector('.current');
+    const currentDot = dotsNavs.querySelector('.current');
+    const targetIndex = buttonsArray.findIndex(button => button === targetWork);
+    const targetSlide = slides[targetIndex];
+
+    const targetDot = dots[targetIndex];
+
+    moveToSlide(track, currentSlide, targetSlide);
+    updateDots(currentDot, targetDot);
+    hideShowArrow(slides, prevButton, nextButton, targetIndex); 
+
+    window.scrollTo({
+        top: height,
+        left:0,
+        behavior: 'smooth',
+    });
+});
 
 
-window.onscroll = function() {myFunction()};
 
-var navbar = document.querySelector('.mainNav');
 
-var intro = document.querySelector('.intro');
-
-var height = intro.offsetHeight;
 
 function myFunction() {
   if (window.pageYOffset >= height-50) {
@@ -132,5 +160,5 @@ const moveButton = document.querySelector('.intro button');
 const moveTarget = document.querySelector('.intro').offsetHeight;
 
 moveButton.addEventListener('click', e => {
-    scrollTo({top:moveTarget,behavior:'smooth'});
+    window.scrollTo({top:moveTarget,left:0, behavior:'smooth'});
 })

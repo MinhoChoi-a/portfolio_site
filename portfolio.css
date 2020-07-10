@@ -230,10 +230,24 @@ button {
     font-size: 20px;
     background-color: var(--text_main);
     color: var(--bg);
-    padding: 2px 12px 2px 12px;
     
+}
+
+.work-list .list #head :hover{
     
-    
+    border-color: 5px solid var(--accent_main);
+	outline: none !important;
+	box-shadow: 0 0px 15px var(--accent_main);
+	transition: .3s ease-in-out;
+}
+
+
+.work-list .list #head Button{
+    background: none;
+    color: var(--bg);
+    border: none;
+    text-align: left;
+    width:100%;
 }
 
 .work-list .list #tag{
