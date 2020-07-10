@@ -32,12 +32,6 @@ button {
     z-index: -1;
 }
 
-@media screen and (max-width: 500px) {
-    .intro img {
-        width: 500%;
-    }
-}
-
 .intro .inner {
     display: table-cell;
     vertical-align: middle;
@@ -207,7 +201,7 @@ button {
 
     color: var(--text_main);
     background: var(--bg);
-    border: 2px solid var(--accent_main);
+    border: 1px solid var(--accent_main);
     border-radius: 50px;
     padding: 2px 12px 2px 12px;
     bottom:0;
@@ -216,37 +210,38 @@ button {
 
 /*port list*/
 .work-list {
-    margin-top: 50px;
+    margin-top: 25px;
     position: relative;
     
+    min-height: 200px;
 }
 
-.work-list ul{
-    height: 100%;
-    margin-bottom: 15px;
+.work-list .list{
     
-    display: table;
-    overflow: auto;
+    display: flex;
+    flex-direction: row;
     
-}
-.work-list li{
-    float:left;
-    list-style: none;
-    
-    display: table-cell;
-    text-align: center;
-    vertical-align: middle;
-
-}
+    margin: auto;
+    margin-bottom: 20px;
+}    
 
 .work-list .list #head{
+    list-style: none;
     font-size: 20px;
     background-color: var(--text_main);
     color: var(--bg);
     padding: 2px 12px 2px 12px;
+    
+    
+    
 }
 
 .work-list .list #tag{
+    list-style: none;
+    
+    float:left;
+    text-align: center;
+    
     font-size: 15px;
     background-color: var(--accent_main);
     margin-left: 10px;
@@ -255,3 +250,17 @@ button {
 }
 
 
+
+@media screen and (max-width: 500px) {
+    .intro img {
+        width: 500%;
+    }
+
+    .body2 {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    
+}
