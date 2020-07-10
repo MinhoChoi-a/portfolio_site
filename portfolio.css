@@ -67,7 +67,6 @@ button {
     transition-duration: 0.5s;    
 }
 
-
 .mainNav {
     z-index: 999;
     background-color: var(--bg_main);
@@ -228,18 +227,18 @@ button {
 .work-list .list #head{
     list-style: none;
     font-size: 20px;
-    background-color: var(--text_main);
+    background: var(--text_main);
     color: var(--bg);
     
 }
 
-.work-list .list #head :hover{
+.work-list .list #head:hover{
     
-    border-color: 5px solid var(--accent_main);
-	outline: none !important;
-	box-shadow: 0 0px 15px var(--accent_main);
-	transition: .3s ease-in-out;
+    box-shadow: 5px 5px var(--accent_main);
+    transition: 0.3s ease-out;
+    
 }
+
 
 
 .work-list .list #head Button{
