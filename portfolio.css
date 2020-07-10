@@ -219,9 +219,10 @@ button {
     
     display: flex;
     flex-direction: row;
-    
+    width: 90%;
     margin: auto;
     margin-bottom: 20px;
+    padding:0;
 }    
 
 .work-list .list #head{
@@ -268,12 +269,15 @@ button {
     background: #c4e6e5;
     padding-top: 100px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
 
 .body3 .basic_port {
     
-    padding: 20px;
+    width: 90%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -295,22 +299,26 @@ button {
 }
 
 .body3 .learning {
+    
+    width:90%;
     margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: flex-start;
     justify-content: center;
+    
 }
-
 
 .body3 .learning ul{
     list-style: none;
+    width: 100%;
+    padding:0;
 }
 
 .body3 .learning #title {
     list-style: none;
     padding-left: 20px;   
-    width: 500px;
+    width: 100%;
     font-size: 20px;
     background: var(--text_main);
     color: var(--bg);
@@ -325,16 +333,35 @@ button {
     margin-bottom: 10px;
 }
 
-.body3 .learning #description_p li {
-    background: var(--text_main);
-    color: var(--bg_main);
-
+.body3 .learning #description li #year {
+    margin-left: 10px;
+    background: var(--accent_main);
+    padding: 2px 5px 2px 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-.body3 .learning #description_p li span{
-    background: var(--accent_main);
-    z-index: 99;
+.body3 .skillBox p {
+    margin: 0 0 1px;
+    padding: 0;
+}
+
+.body3 .skillBox p:nth-child(2) {
     
+    float: right;
+    position: relative;
+    top: -25px;
+}
+
+.body3 .skill {
+    background: white;
+    text-align: right;
+}
+
+.body3 .skill_level {
+    background: var(--accent_main);
+    width:100%;
+    height:10px;
 }
 
 
@@ -346,8 +373,19 @@ button {
     .body2 {
         height: 100%;
     }
+
+    .body3 {
+        height: 100%;
+    }
+
+    .body3 .learning {
+    flex-direction: column;
+    
+    }
 }
 
 @media screen and (max-width: 700px) {
     
 }
+
+
