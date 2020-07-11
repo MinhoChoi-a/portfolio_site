@@ -139,20 +139,28 @@ worksButton.addEventListener('click', e=> {
 });
 
 
-
-
-
 function myFunction() {
-  if (window.pageYOffset >= height-50) {
+  
+    var work = document.querySelector('.work__button');
+
+    const workHeight = work.offsetHeight;
+
+  
+    if (window.pageYOffset >= height-50) {
     document.querySelector('.mainNav').style.display='block';
     document.querySelector('.works').style.padding='50px 0px 0px 0px';
-    navbar.classList.add("sticky")
-    
-  } else {
+    navbar.classList.add("sticky");
+    document.querySelector('.navigate').style.display='flex';
+  } 
+  
+  else {
     document.querySelector('.mainNav').style.display='none';
     document.querySelector('.works').style.padding='0px 0px 0px 0px';
     navbar.classList.remove("sticky");
+    document.querySelector('.navigate').style.display='none';
+    
   }
+
 }
 
 
@@ -161,4 +169,12 @@ const moveTarget = document.querySelector('.intro').offsetHeight;
 
 moveButton.addEventListener('click', e => {
     window.scrollTo({top:moveTarget,left:0, behavior:'smooth'});
+})
+
+
+const profileButton = document.querySelector('.navigate');
+const profileTarget = document.querySelector('.body2').offsetHeight*2.3;
+
+profileButton.addEventListener('click', e => {
+    window.scrollTo({top:profileTarget,left:0, behavior:'smooth'});
 })

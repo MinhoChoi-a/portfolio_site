@@ -212,7 +212,7 @@ button {
     margin-top: 25px;
     position: relative;
     
-    min-height: 200px;
+    
 }
 
 .work-list .list{
@@ -262,6 +262,40 @@ button {
     border: 0.1em solid var(--bg);
     
 }
+
+.body2 .navigate {
+    
+    width:100%;
+    margin:auto;
+    
+    bottom:0;
+    
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position:fixed;
+    
+}
+
+.body2 .navigate p{
+    margin:0;
+    font-size: 25px;
+    color: var(--text_main);
+}
+
+.body2 .navigate button {
+    background: none;
+    border: none;
+}
+
+.body2 .navigate span {
+    margin:0;
+    font-size: 35px;
+    color: var(--text_main);
+}
+
 
 
 .body3 {
@@ -380,12 +414,18 @@ button {
 
     .body3 .learning {
     flex-direction: column;
-    
+    }
+
+    .body2 .navigate {
+        position:relative;
     }
 }
 
 @media screen and (max-width: 700px) {
     
+    .body2 .navigate {
+        position:relative;
+    }
 }
 
 
