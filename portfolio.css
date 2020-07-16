@@ -58,6 +58,7 @@ button {
     border: 2px solid var(--accent_main);
     padding: 20px;
     border-radius: 20px;
+    margin-top: 20px;
 }
 
 .intro .inner #content button:hover{
@@ -204,8 +205,14 @@ button {
     border-radius: 50px;
     padding: 2px 12px 2px 12px;
     bottom:0;
+    box-shadow: 3px 3px var(--accent_main);
 
 }
+
+.carousel__track .content h1 {
+    margin-bottom: 20px;
+}
+
 
 /*port list*/
 .work-list {
@@ -296,6 +303,9 @@ button {
     color: var(--text_main);
 }
 
+.body2 .specific {
+    display: flex;
+}
 
 
 .body3 {
@@ -399,6 +409,11 @@ button {
 }
 
 
+.body3 .size{
+    display: none;
+}
+
+
 .body4 {
     height: 100vh;
     background: #c4e6e5;
@@ -468,7 +483,7 @@ button {
 
 .body4 .foot i:hover {
     color: var(--accent_main);
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s;
 }
 
 .body4 .foot .middle {
@@ -481,7 +496,6 @@ button {
     font-size: 20px;
 }
 
-
 @media screen and (max-width: 500px) {
     .intro img {
         width: 500%;
@@ -489,6 +503,14 @@ button {
 
     .body2 {
         height: 100%;
+    }
+
+    .body2 .navigate {
+        position:relative;
+    }
+
+    .body2 .specific {
+        display: none;
     }
 
     .body3 {
@@ -499,9 +521,10 @@ button {
     flex-direction: column;
     }
 
-    .body2 .navigate {
-        position:relative;
+    .body3 .size{
+        display: flex;
     }
+
 }
 
 @media screen and (max-width: 700px) {
