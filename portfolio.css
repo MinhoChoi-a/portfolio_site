@@ -411,21 +411,25 @@ button {
 }
 
 .body4 form {
-    
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin-top: 50px;
 }
 
 .body4 form table{
     width: 100%;
     margin: 0;
+    box-shadow: 3px 3px var(--bg_main);
 }
 
 .body4 form table input, textarea {
     width: 350px;
     overflow: auto;
+    border: none;
+    color: var(--text_main);
+    padding: 5px;
 }
 
 .body4 form table input .text{
@@ -433,8 +437,49 @@ button {
 }
 
 .body4 form button{
+    margin-top: 10px;
     align-self: flex-end;
-    }
+    border: none;
+    background-color: var(--text_main);
+    padding: 2px 10px 2px 10px;
+    color: var(--bg);
+    box-shadow: 3px 3px var(--bg_main);
+}
+
+.body4 form button:hover {
+    box-shadow: 3px 3px var(--accent_main);
+    transition: ease-in-out 0.3s;
+}
+
+.body4 .foot {
+    position:absolute;
+    width: 100%;
+    background-color: var(--text_main);
+    color: var(--bg);
+    padding: 50px;
+    margin-top: 50px;
+    bottom:0;
+}
+
+.body4 .foot i {
+    font-size: 50px;
+    color: var(--bg)
+}
+
+.body4 .foot i:hover {
+    color: var(--accent_main);
+    transition: ease-in-out 0.3s;
+}
+
+.body4 .foot .middle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.body4 .foot h4 {
+    margin-top: 20px;
+    font-size: 20px;
+}
 
 
 @media screen and (max-width: 500px) {
