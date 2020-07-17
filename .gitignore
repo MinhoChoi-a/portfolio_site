@@ -3,3 +3,9 @@
 
 # image
 /img
+
+# express-module
+/node_modules
+
+# credentials
+/credentials

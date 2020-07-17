@@ -41,7 +41,7 @@
         <div class="inner">
             <div class="animate__animated animate__bounceInUp" id="content">
                 <h1>Welcome to MINHO Studio</h1>
-                <h1>I'm a full stack developer</h1>
+                <h1>I wanna be a full stack developer</h1>
                 <button>View my works</button>
             </div>
         </div>
@@ -296,21 +296,21 @@
             <h4>Have a question or want to work together?</h4>
         </section>
 
-            <form action="submit" class="contact_form">
+            <form method="POST" action='' class="contact_form">
                 <table class="submit">
                     <tr>
                         <td>
-                        <input type="text" class="name" placeholder="Name"></td>
+                        <input type="text" class="name" name="name" placeholder="Name"></td>
                     </tr>
                     <tr>
                         <td>
-                        <input type="text" class="email" placeholder="E-mail"></td>
+                        <input type="text" class="email" name="email" placeholder="E-mail"></td>
                     </tr>
                     <tr><td>
-                        <textarea placeholder="Message" rows="4" cols="50"></textarea></td>
+                        <textarea placeholder="Message" name="Message" rows="4" cols="50"></textarea></td>
                     </tr>
                 </table>
-                <button class="send" onsubmit="">Send</button>
+                <button class="send" type="submit">Send</button>
             </form>
 
             <div class="foot">
@@ -321,6 +321,7 @@
             </div>
     
 <script src="js/carousel.js"></script>
+
 </body>
 
 </html>
