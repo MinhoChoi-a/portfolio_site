@@ -2,10 +2,10 @@
 *.pptx
 
 # image
-img
+/public/img
 
 # express-module
-node_modules
+/node_modules
 
 # credentials
-aws.js
+/credentials
