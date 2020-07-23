@@ -59,6 +59,7 @@ button {
     padding: 20px;
     border-radius: 20px;
     margin-top: 20px;
+    outline:none;
 }
 
 .intro .inner #content button:hover{
@@ -253,6 +254,7 @@ button {
     border: none;
     text-align: left;
     width:100%;
+    outline:none;
 }
 
 .work-list .list #tag{
@@ -270,31 +272,29 @@ button {
     
 }
 
-.body2 .navigate {
+.body2 .navigate__profile {
     
     width:100%;
     margin:auto;
-    bottom:0;
-    display: hidden;
+    bottom: 0;
+    display: none;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     position:fixed;
+    background: none;
+    border: none;
+    outline:none;
     
 }
 
-.body2 .navigate p{
+.body2 .navigate__profile p{
     margin:0;
     font-size: 25px;
     color: var(--text_main);
 }
 
-.body2 .navigate button {
-    background: none;
-    border: none;
-}
-
-.body2 .navigate span {
+.body2 .navigate__profile span {
     margin:0;
     font-size: 35px;
     color: var(--text_main);
@@ -410,6 +410,35 @@ button {
     display: none;
 }
 
+.body3 .navigate__contact {
+    
+    width:100%;
+    margin:auto;
+    bottom:0;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:fixed;
+    background: none;
+    border: none;
+    outline:none;
+    
+}
+
+.body3 .navigate__contact p{
+    margin:0;
+    font-size: 25px;
+    color: var(--text_main);
+}
+
+
+.body3 .navigate__contact span {
+    margin:0;
+    font-size: 35px;
+    color: var(--text_main);
+}
+
 
 .body4 {
     height: 100vh;
@@ -457,6 +486,7 @@ button {
     padding: 2px 10px 2px 10px;
     color: var(--bg);
     box-shadow: 3px 3px var(--bg_main);
+    outline:none;
 }
 
 .body4 form button:hover {
@@ -517,15 +547,7 @@ button {
     }
 
     .body2 {
-        height: 100%;
-    }
-
-    .body2 .work-list{
-        height: 100%;
-    }
-
-    .body2 .navigate {
-        position:relative;
+        height: auto;
     }
 
     .body2 .specific {
@@ -533,8 +555,8 @@ button {
     }
 
     .body3 {
-        min-height:100%;
-        overflow: auto;
+        height:auto;
+        padding-top: 50px;
     }
 
     .body3 .learning {
@@ -547,7 +569,7 @@ button {
 
     .body4 {
         height: 100%;
-        overflow: auto;
+        
     }
 
     .body4 .foot {
@@ -559,8 +581,16 @@ button {
 
 @media screen and (max-width: 700px) {
     
-    .body2 .navigate {
+    .body2 .navigate__profile {
         position:relative;
+        
+        margin-bottom: 0px;
+    }
+
+    .body3 .navigate__contact {
+        position:relative;
+        
+        margin-bottom: 0px;
     }
 }
 

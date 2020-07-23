@@ -30,7 +30,7 @@ window.onload = movingImage;
 function movingImage() {
     const image = document.querySelector('.intro img');
     image.style.transform = 'translateX(-1000px)';
-    document.querySelector('.navigate').style.display='none';
+    
 }
 
 
@@ -142,48 +142,65 @@ worksButton.addEventListener('click', e=> {
 });
 
 
+
+const moveButton = document.querySelector('.intro button');
+
+
+const profileButton = document.querySelector('.navigate__profile');
+
+const profileSection = document.querySelector('.body2');
+const moveHeight = profileSection.offsetHeight + height;
+
+
+const contactButton = document.querySelector('.navigate__contact');
+const contactSection = document.querySelector('.body3');
+const moveHieghtContact = contactSection.offsetHeight + moveHeight;
+
+const finalSection = document.querySelector('.body4');
+
 function myFunction() {
   
-  //  var work = document.querySelector('.work__button');
-
-  //  const workHeight = work.offsetHeight;
-    console.log(window.pageYOffset);
-  
-    if (window.pageYOffset >= height-50) {
+  if (window.pageYOffset >= height-50) {
     document.querySelector('.mainNav').style.display='block';
     document.querySelector('.works').style.padding='50px 0px 0px 0px';
     navbar.classList.add("sticky");
-    
   } 
   
   else {
     document.querySelector('.mainNav').style.display='none';
     document.querySelector('.works').style.padding='0px 0px 0px 0px';
     navbar.classList.remove("sticky");
-    }
-
-  const moveTarget = document.querySelector('.intro').offsetHeight;
+  }
 
   if (window.pageYOffset >= height-(height/7)){
-    document.querySelector('.navigate').style.display='flex';
+    document.querySelector('.navigate__profile').style.display='flex';
   }
 
   else{
-    document.querySelector('.navigate').style.display='none';
+    document.querySelector('.navigate__profile').style.display='none';
   }
 
+  if (window.pageYOffset >= moveHeight-(moveHeight/9)){
+    document.querySelector('.navigate__contact').style.display='flex';
+  }
+
+  else{
+    document.querySelector('.navigate__contact').style.display='none';
+  }
 }
 
-const moveButton = document.querySelector('.intro button');
 
 moveButton.addEventListener('click', e => {
     window.scrollTo({top:height,left:0, behavior:'smooth'});
 })
 
-
-const profileButton = document.querySelector('.navigate');
-
 profileButton.addEventListener('click', e => {
-    window.scrollTo({top:height*2,left:0, behavior:'smooth'});
+    contactSection.scrollIntoView({behavior:'smooth'});
+    //window.scrollTo({top:moveHeight,left:0, behavior:'smooth'});
+})
+
+contactButton.addEventListener('click', e => {
+    finalSection.scrollIntoView({behavior:'smooth'});
+    //window.scrollTo({top:moveHieghtContact,left:0, behavior:'smooth'});
 })
 
