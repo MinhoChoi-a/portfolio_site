@@ -1,11 +1,12 @@
 const AWS = require('aws-sdk');
 const awsKey = require('../../credentials/aws');
+const email = require('../../credentials/email');
 
 const ses = new AWS.SES({
     accessKeyId: awsKey.access.accessKeyId,
     secretAccessKey: awsKey.access.secretAccessKey,
     region: 'us-west-2',
-    //apiVersion: '2010-12-01'
+    
 });
 
 var params = {
@@ -13,7 +14,7 @@ var params = {
         // CcAddresses: ['',
         // ],
 
-        ToAddresses: ['minhocalgary@gmail.com',
+        ToAddresses: [email.email,
         ],
     },
 
@@ -33,7 +34,7 @@ var params = {
                 Data: ''
             }
         },
-        Source: '', //sender e-mail
+        Source: email.email, //sender e-mail
         // ReplyToAddresses: [
         //     'email address'
         // ],
@@ -44,21 +45,25 @@ exports.sendEmail =
 
     (req, res, next) => {
         
-        console.log(req.body);
+        console.log("Export test");
         
-        params.Message.Body.Text.Data = req.body.Message;
-        params.Message.Subject.Data = "portfolit page e-mail from "+ req.body.name;
-        params.Source = req.body.email;
-
-        var sendPromise = ses.sendEmail(params).promise();
-
-        sendPromise.then(
-            function(data) {
-              console.log(data.MessageId);
-            }).catch(
-              function(err) {
-              console.error(err, err.stack);
-            });
+        params.Message.Body.Text.Data = req.body.Message+ '\nfrom '+req.body.email;
+        params.Message.Subject.Data = "portfolio page e-mail from "+ req.body.name;
+        
+        ses.sendEmail(params, function(err, data){
+            
+            if(!err){
+                console.log(data.MessageId);
+                res.render('afterEmail', {title: "thanks"});
+                
+            }
+            else {
+                console.log(err.message);
+            }
+    
+        })
+        
+        return;
         
     }
 

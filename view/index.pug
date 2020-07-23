@@ -1,7 +1,249 @@
-html
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  link(rel="icon" href="img/fav.ico" type="image/x-icon")
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  script(type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js')
+  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+  link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
+  //
+    <script
+    src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+    crossorigin="anonymous"></script>
+  link(rel='stylesheet' ,='' href='portfolio.css')
+  meta(name='description' content='Web site')
+  script(src='js/ajax.js')
+  title MINHO Studio
+section.intro
+  img.image(src='img/back.jpg' alt='')
+  .inner
+    #content.animate__animated.animate__bounceInUp
+      h1 Welcome to MINHO Studio
+      h1 I wanna be a full stack developer
+      button View my works
+.mainNav
+  nav.navbar.navbar-dark.navbar-expand-md
+    .container-fluid
+      a.navbar-brand(href='/') MINHO STUDIO
+      button.navbar-toggler(data-toggle='collapse' data-target='#navbarResponsive' type='button' aria-controls='navbarResponsive' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        ul.nav.navbar-nav.mr-auto.mt-2.mt-lg-0.text-uppercase
+          li.nav-item(role='presentation')
+            a.nav-link.js-scroll-trigger(href='.works') WORKS
+          li.nav-item(role='presentation')
+            a.nav-link.js-scroll-trigger(href='/beer/map') PROFILE
+          li.nav-item(role='presentation')
+            a.nav-link.js-scroll-trigger(href='/beer/top-rated') CONTACT
+.body2
+  section.works
+    .carousel
+      button.carousel__button.carousel__button--left.is-hidden
+        img(src='/img/left.svg' alt='')
+      .carousel__track-container
+        ul.carousel__track
+          li.carousel__slide.current
+            .content
+              h1 Car Rental Maganement
+              p Register, update, and check your cars
+              p.specific
+                | Users can register their cars with image and search the available car in a specific date. This site is developed by using AWS S3 and mongoDB
+              button.link
+                | Go to Site
+              a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing')
+                button.link View Code
+          li.carousel__slide
+            .content
+              h1 Youtube Chef Cooking
+              p Try all the food from around the world
+              p.specific
+                | Users can easily find the representitive food around the world with this app. This site is developed by usin React.js and youtube-api
+              button.link
+                | Go to Site
+              a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing')
+                button.link View Code
+          li.carousel__slide
+            .content
+              h1 Weather City Application
+              p Search your place and the weather information
+              p.specific
+                | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
+              button.link
+                | Go to Site
+              a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing')
+                button.link View Code
+          li.carousel__slide
+            .content
+              h1 All Beer Vibes Web-App
+              p Find the beer what you want and try
+              p.specific
+                | Users can easily find the beer with any little keyword, also they can manage their beer history. This site is developed with Untappd-api.
+              button.link
+                | Comming Soon
+      button.carousel__button.carousel__button--right
+        img(src='img/right.svg' alt='')
+      .carousel__nav
+        button.carousel__indicator.current
+        button.carousel__indicator
+        button.carousel__indicator
+        button.carousel__indicator
+  section.work-list
+    ul.list
+      #head
+        li
+          button.work__button Car Rental Manager
+      #tag-tag
+        li#tag
+          | pug
+        li#tag
+          | css
+        li#tag
+          | bootstrap
+        li#tag
+          | jquery
+        li#tag
+          | node-js
+        li#tag
+          | express-js
+        li#tag
+          | mongoDB
+        li#tag
+          | AWS-S3
+        li#tag
+          | MVC-model
+    ul.list
+      #head
+        li
+          button.work__button Youtube Chef
+      #tag-tag
+        li#tag
+          | material-ui
+        li#tag
+          | react
+        li#tag
+          | youtube-api
+    ul.list
+      #head
+        li
+          button.work__button Weather City
+      #tag-tag
+        li#tag
+          | html
+        li#tag
+          | css
+        li#tag
+          | vanilla-js
+        li#tag
+          | express-js
+        li#tag
+          | openweathermap-api
+    ul.list
+      #head
+        li
+          button.work__button All Beer Vibes
+      #tag-tag
+        li#tag
+          | html
+        li#tag
+          | css
+        li#tag
+          | express-js
+  .navigate
+    p Profile Section
+    button
+      span.material-icons(onclick="window.scrollTo({top:700,behavior:'smooth'})")
+        | arrow_circle_down
+.body3
+  section.basic_port
+    .image
+      img(src='img/port2.png')
+    .text
+      p
+        | Introduction blah blah Introduction blah blah Introduction blah blah Introduction blah blah Introduction blah blah Introduction blah blah
+  section.learning
+    ul.list
+      #title
+        li What MINHO learned
+      #description
+        li
+          | Learn MUSIC 
+          br.size
+          | from 
+          a(href='cau.ac.kr') Chung-Ang University
+          span#year  2005 - 2012
+        li
+          | Concert Video Production 
+          br.size
+          | from 
+          a(href='cau.ac.kr') Arte TV
+          span#year 2012 - 2013
+        li
+          | Create Show 
+          br.size
+          | from 
+          a(href='cau.ac.kr') SHOW&amp;NEW Co., Ltd.
+          span#year 2013 - 2016
+        li
+          | Distribute Music 
+          br.size
+          | from 
+          a(href='cau.ac.kr') MUSIC&amp;NEW Co., Ltd.
+          span#year 2016 - 2019
+    ul.list
+      #title
+        li What MINHO keep learning
+      #description_p
+        li.skillBox
+          p SAIT Software Development Diploma
+          p 50%
+          .skill
+            .skill_level(style='width:50%;')
+        li.skillBox
+          p Data Algorithm Coursera Certificate
+          p 20%
+          .skill
+            .skill_level(style='width:20%;')
+        li.skillBox
+          p AWS Certified Associate Developer
+          p 20%
+          .skill
+            .skill_level(style='width:15%;')
+        li.skillBox
+          p Coding &amp; Programming
+          p Never Ending
+          .skill
+            .skill_level(style='width:5%;')
+        li
+.body4
+  section.contact
+    h1 CONTACT
+    h4 Have a question or want to work together?
+  form.contact_form(method='POST' action='')
+    table.submit
+      tr
+        td
+          input.name(type='text' name='name' placeholder='Name')
+      tr
+        td
+          input.email(type='text' name='email' placeholder='E-mail')
+      tr
+        td
+          textarea(placeholder='Message' name='Message' rows='4' cols='50')
+    button.send(type='submit') Send
 
-  head
-    link(rel="icon" href="img/fav.ico" type="image/x-icon")
-      
-  body
-    include index.html
+    section.afterEmail
+
+block content
+
+  .foot
+    a(href='#')
+      i.fa.fa-linkedin
+    a.middle(href='#')
+      i.fa.fa-github
+    a(href='#')
+      i.fa.fa-youtube
+    h4 MINHO STUDIO &copy;2020
+  script(src='js/carousel.js')

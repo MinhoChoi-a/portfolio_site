@@ -178,3 +178,4 @@ const profileTarget = document.querySelector('.body2').offsetHeight*2.3;
 profileButton.addEventListener('click', e => {
     window.scrollTo({top:profileTarget,left:0, behavior:'smooth'});
 })
+
