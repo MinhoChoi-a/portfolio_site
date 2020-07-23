@@ -23,7 +23,7 @@ router.get('/', function (req, res) {
 
 const ses = require('./public/js/ses');
 
-router.post('/', ses.sendEmail);
+router.post('/email', ses.sendEmail);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

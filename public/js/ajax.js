@@ -1,21 +1,23 @@
 jQuery(document).ready(function($){
   
-  $("button.send").closest("form").submit(function(e) {
+  $("form").submit(function(e) {
         
     e.preventDefault();
+      
+    var formData = $(this).serialize();
     
-      var formData = new FormData($(this));
-    
-      console.log(formData);
+    console.log(formData);
 
-        $.get('/email').then(function (data) {
+        $.post('/email', formData, function (data) {
   
         console.log(data);
   
         $('form.contact_form').css("display", "none");
   
         $('section.afterEmail').html(data);
-          });
+        
+        });
+
       })
   });
 

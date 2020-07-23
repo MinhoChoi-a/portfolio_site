@@ -45,8 +45,6 @@ exports.sendEmail =
 
     (req, res, next) => {
         
-        console.log("Export test");
-        
         params.Message.Body.Text.Data = req.body.Message+ '\nfrom '+req.body.email;
         params.Message.Subject.Data = "portfolio page e-mail from "+ req.body.name;
         
@@ -55,15 +53,14 @@ exports.sendEmail =
             if(!err){
                 console.log(data.MessageId);
                 res.render('afterEmail', {title: "thanks"});
+                return;
                 
             }
             else {
                 console.log(err.message);
+                return;
             }
     
         })
-        
-        return;
-        
     }
 
