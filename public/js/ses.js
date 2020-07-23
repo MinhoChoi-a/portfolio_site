@@ -51,8 +51,7 @@ exports.sendEmail =
         ses.sendEmail(params, function(err, data){
             
             if(!err){
-                console.log(data.MessageId);
-                res.render('afterEmail', {title: "thanks"});
+                res.render('afterEmail', {title: "Thanks"});
                 return;
                 
             }
