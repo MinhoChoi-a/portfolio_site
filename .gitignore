@@ -1,9 +1,6 @@
 # draft
 *.pptx
 
-# image
-/public/img
-
 # express-module
 /node_modules
 

@@ -204,3 +204,21 @@ contactButton.addEventListener('click', e => {
     //window.scrollTo({top:moveHieghtContact,left:0, behavior:'smooth'});
 })
 
+const navWorkBut = document.querySelector('.nav-link_work');
+
+navWorkBut.addEventListener('click', e => {
+    window.scrollTo({top:height,left:0, behavior:'smooth'});
+});
+
+const navProfileBut = document.querySelector('.nav-link_profile');
+
+navProfileBut.addEventListener('click', e => {
+    contactSection.scrollIntoView({behavior:'smooth'});
+});
+
+const navContactBut = document.querySelector('.nav-link_contact');
+
+navContactBut.addEventListener('click', e => {
+    finalSection.scrollIntoView({behavior:'smooth'});
+});
+
