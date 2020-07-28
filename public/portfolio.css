@@ -619,11 +619,12 @@ button {
     }
 
     .body4 {
-        height: 100%;
+        height: auto;
         
     }
 
     .body4 .foot {
+        position: relative;
         height: 150px;
         padding-top: 25px;
     }
