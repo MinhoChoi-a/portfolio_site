@@ -64,7 +64,7 @@ button {
     font-size: 2em;
     background: none;
     border: 2px solid var(--accent_main);
-    padding: 20px;
+    padding: 10 20 10 20;
     border-radius: 20px;
     margin-top: 20px;
     outline:none;
@@ -376,6 +376,11 @@ button {
     height: 100%;
 }
 
+.body3 .basic_port .text .name{
+    color: var(--accent_main);
+    margin-bottom: 0px;
+}
+
 .body3 .learning {
     
     width:90%;
@@ -594,7 +599,10 @@ button {
 
     .intro .inner .title {
         font-size: 30px;
-        padding: 0px 10px 0px 10px;
+    }
+
+    .intro .inner #content button{
+        font-size: 25px;
     }
 
     .body2 {
@@ -610,7 +618,12 @@ button {
         padding-top: 50px;
     }
 
+    .body3 .basic_port {
+        flex-direction: column;
+    }
+
     .body3 .learning {
+        margin-top: 0px;
         flex-direction: column;
     }
 
