@@ -626,6 +626,7 @@ button {
 
     .body3 .basic_port {
         flex-direction: column;
+        justify-content: unset;
         margin-bottom: 0px;
     }
     
