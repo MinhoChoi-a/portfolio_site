@@ -620,6 +620,7 @@ button {
 
     .body3 .basic_port {
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     .body3 .learning {
