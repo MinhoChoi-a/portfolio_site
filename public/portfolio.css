@@ -378,8 +378,13 @@ button {
 
 .body3 .basic_port .text .name{
     color: var(--accent_main);
+    
+}
+
+.body3 .basic_port .text p{
     margin-bottom: 0px;
 }
+
 
 .body3 .learning {
     
