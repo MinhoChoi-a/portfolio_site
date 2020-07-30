@@ -374,6 +374,7 @@ button {
     padding: 20px;
     width: 350px;
     height: 100%;
+    margin-bottom: 0px;
 }
 
 .body3 .basic_port .text .name{
