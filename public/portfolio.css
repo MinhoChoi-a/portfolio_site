@@ -628,6 +628,11 @@ button {
         flex-direction: column;
         margin-bottom: 0px;
     }
+    
+    .body3 .basic_port .image, .body3 .basic_port .text, .body3 .basic_port .name{
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
 
     .body3 .learning {
         margin-top: 0px;
