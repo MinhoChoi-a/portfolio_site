@@ -36,12 +36,11 @@ button {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
-    max-width: none;
 }
  
 .intro .inner #content {
     max-width: 100%;
-    margin: 0 atuo;
+    margin: 0;
     text-align: center;
     animation-duration: 2s;
     color: var(--text_main);
@@ -51,9 +50,9 @@ button {
     font-size: 2em;
 }
 
-.intro .inner .title {
+.intro .inner .title p{
     color: var(--accent_main);
-    background: var(--text_main);
+    margin-bottom: 0;
     font-size: 40px;
 }
 
