@@ -1,10 +1,10 @@
+require('dotenv').config();
+
 const AWS = require('aws-sdk');
-const awsKey = require('../../credentials/aws');
-const email = require('../../credentials/email');
 
 const ses = new AWS.SES({
-    accessKeyId: awsKey.access.accessKeyId,
-    secretAccessKey: awsKey.access.secretAccessKey,
+    accessKeyId: process.env.AWS_accessKeyId,
+    secretAccessKey: process.env.AWS_secretAccessKey,
     region: 'us-west-2',
     
 });
@@ -14,7 +14,7 @@ var params = {
         // CcAddresses: ['',
         // ],
 
-        ToAddresses: [email.email,
+        ToAddresses: [process.env.Email
         ],
     },
 
@@ -34,7 +34,7 @@ var params = {
                 Data: ''
             }
         },
-        Source: email.email, //sender e-mail
+        Source: process.env.Email, //sender e-mail
         // ReplyToAddresses: [
         //     'email address'
         // ],

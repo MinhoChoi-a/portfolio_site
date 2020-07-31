@@ -35,7 +35,7 @@ body
     .inner
       #content.animate__animated.animate__bounceInUp
         .title
-          p Welcome to my page
+          p Hello World!
         button View my works
   
   .mainNav
@@ -68,8 +68,9 @@ body
                 p Register, update, and check your cars
                 p.specific
                   | Users can register their cars with image and search the available car in a specific date. This site is developed by using AWS S3 and mongoDB
-                button.link
-                  | Go to Site
+                a(href='http://ec2-54-213-101-22.us-west-2.compute.amazonaws.com/car/register' target="_blank")
+                  button.link
+                    | Go to Site
                 a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing' target="_blank")
                   button.link View Code
             li.carousel__slide

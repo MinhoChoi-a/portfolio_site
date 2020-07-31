@@ -10,6 +10,7 @@
   "dependencies": {
     "async": "^3.2.0",
     "aws-sdk": "^2.670.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "pug": "^3.0.0"
   },
