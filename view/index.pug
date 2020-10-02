@@ -94,8 +94,12 @@ body
                 p Find the beer what you want
                 p.specific
                   | Users can easily find the beer with any little keyword, also they can manage their beer history. This site is developed with Untappd-api.
-                button.link
-                  | Comming Soon
+                a(href='https://all-beer-vibes.herokuapp.com/' target="_blank")
+                  button.link
+                    | Go to Site
+                a(href='https://github.com/AllBeerVibes/AllBeerVibes' target="_blank")
+                  button.link View Code
+                
         button.carousel__button.carousel__button--right
           img(src='img/right.svg' alt='')
         .carousel__nav
@@ -135,7 +139,7 @@ body
           li#tag
             | material-ui
           li#tag
-            | react
+            | react.js
           li#tag
             | youtube-api
       ul.list
@@ -159,11 +163,19 @@ body
             button.work__button All Beer Vibes
         #tag-tag
           li#tag
-            | html
+            | ejs
           li#tag
             | css
           li#tag
+            | javascript
+          li#tag
+            | bootstrap
+          li#tag
+            | passport.js
+          li#tag
             | express-js
+          li#tag
+            | untappd-api
     button.navigate__profile
       p Profile Section
       span.material-icons
@@ -176,38 +188,32 @@ body
         p.name
           | MINHO CHOI
         p
-          | Experienced creative works in art & music business from production to distribution.
-          | Studied at SAIT(Southern Alberta Institution of Technology) to transfer the career as 'developer'.
-          | Always be humble and deligent to be a good memeber of team.
+          | With the knowledge of programming and data structuring, I have been trying to solve problems, also eager to make a useful application for people around me.
+          | I started to learn the Software Development course at SAIT(diploma in Information Technology) in 2019.
+          | It helped me to gain a deep understanding of programming. Now, I’m in the final year of the course and waiting for opportunities to work as a software developer.
     section.learning
       ul.list
         #title
-          li What MINHO learned
+          li MINHO's Skill
         #description
           li
-            | Learn MUSIC 
-            br.size
-            | from 
-            a(href='https://neweng.cau.ac.kr/cms/FR_CON/index.do?MENU_ID=820&CONTENTS_NO=1&P_TAB_NO=1' target="_blank") Chung-Ang University
-            span#year  2005 - 2012
+            span#name Programming
+            | Java, Javascript, HTML(PUG/EJS/JSP)            
           li
-            | Concert Video Production 
-            br.size
-            | from 
-            a(href='http://www.arte.co.kr/' target="_blank") Arte TV
-            span#year 2012 - 2013
+            span#name Backend-Framework
+            | Express.js, Spring
           li
-            | Create Show 
-            br.size
-            | from 
-            a(href='http://www.its-new.co.kr/' target="_blank") SHOW&amp;NEW Co., Ltd.
-            span#year 2013 - 2016
+            span#name Frontend-Framework
+            | React.js
           li
-            | Distribute Music 
-            br.size
-            | from 
-            a(href='http://www.its-new.co.kr/' target="_blank") MUSIC&amp;NEW Co., Ltd.
-            span#year 2016 - 2019
+            span#name Database
+            | SQL, MongoDB
+          li
+            span#name Web-Server
+            | Nginx, Tomcat
+          li
+            span#name Amazon Web Service
+            | EC2, SES, S3
       ul.list
         #title
           li What MINHO keep learning
@@ -215,15 +221,15 @@ body
           li.skillBox
             p 
               a(href='https://www.sait.ca/programs-and-courses/full-time-studies/diplomas/information-technology' target="_blank") SAIT - Software Development Diploma
-            p 50%
+            p 60%
             .skill
-              .skill_level(style='width:50%;')
+              .skill_level(style='width:60%;')
           li.skillBox
             p 
               a(href='https://www.coursera.org/specializations/data-structures-algorithms?' target="_blank") Coursera - Data Structure and Algorithms
-            p 20%
+            p 30%
             .skill
-              .skill_level(style='width:20%;')
+              .skill_level(style='width:30%;')
           li.skillBox
             p 
               a(href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank") AWS Certified Developer - Associate
@@ -248,13 +254,13 @@ body
       table.submit
         tr
           td
-            input.name(type='text' name='name' placeholder='Name')
+            input.name(type='text' name='name' placeholder='Name' required)
         tr
           td
-            input.email(type='text' name='email' placeholder='E-mail')
+            input.email(type='text' name='email' placeholder='E-mail' required)
         tr
           td
-            textarea.text(placeholder='Message' name='Message' rows='4' cols='50')
+            textarea.text(placeholder='Message' name='Message' rows='4' cols='50' required)
       button.send(type='submit') Send
 
     section.afterEmail

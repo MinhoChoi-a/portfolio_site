@@ -421,12 +421,13 @@ button {
     margin-bottom: 10px;
 }
 
-.body3 .learning #description li #year {
+.body3 .learning #description li #name {
     margin-left: 10px;
     background: var(--accent_main);
-    padding: 2px 5px 2px 5px;
+    padding: 2px 7px 2px 7px;
     margin-bottom: 10px;
-    font-size: 14px;
+    margin-right: 10px;
+    font-size: 17px;
 }
 
 .body3 .skillBox a {
@@ -630,8 +631,12 @@ button {
     }
     
     .body3 .learning {
-        margin-top: 0px;
+        margin-top: 40px;
         flex-direction: column;
+    }
+
+    .body3 .learning #description li #name {
+        margin-left:0;
     }
 
     .body3 .size{
