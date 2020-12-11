@@ -23,6 +23,10 @@ router.get('/', function (req, res) {
     res.render('index');
 });
 
+router.get('/privacy', function (req, res) {
+  res.render('privacy');
+});
+
 const ses = require('./public/js/ses');
 
 router.post('/email', ses.sendEmail);

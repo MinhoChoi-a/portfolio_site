@@ -222,3 +222,13 @@ navContactBut.addEventListener('click', e => {
     finalSection.scrollIntoView({behavior:'smooth'});
 });
 
+const navAboutBut = document.querySelector(".nav-link_about");
+
+navAboutBut.addEventListener('click', e=> {
+    console.log("click about");
+    window.location.href="http://minhoproject.studio";
+})
+
+function clickAbout() {
+    window.location.href="http://www.minhoproject.studio/";
+}
