@@ -17,7 +17,7 @@ head
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
   
-  link(rel='stylesheet', href='portfolio2021.css')
+  link(rel='stylesheet', href='portfolio1223.css')
   meta(name='description' content='Web site')
   
   title MINHO Studio
@@ -57,8 +57,17 @@ body
           ul.carousel__track
             li.carousel__slide.current
               .content
+                h1 Text For You Android App
+                p Express your mind silently
+                p.specific
+                  | Android application to express your mind silently with beautiful background and fonts. It is available at google play only.
+                a(href='https://play.google.com/store/apps/details?id=text.foryou' target="_blank")
+                  button.link
+                    | Go to Site
+            li.carousel__slide.current
+              .content
                 h1 Baking Bunny Order App
-                p Online order application
+                p Online order web application
                 p.specific
                   | Online order application to meet the actual client's requirement, It has e-mail nottification, check delivery fee based on address, and other useful functions.
                 a(href='https://www.bakingbunny.shop/' target="_blank")
@@ -78,7 +87,7 @@ body
             li.carousel__slide
               .content
                 h1 YouTube Cooking Chef
-                p Try all the food from around the world
+                p Try the food from around the world
                   p.specific
                     | Users can easily find representative food around the world with this app. This site is developed with React.js and youtube-api
                 a(href='https://youtube-chef.herokuapp.com/' target="_blank")
@@ -88,8 +97,8 @@ body
                   button.link View Code
             li.carousel__slide
               .content
-                h1 Weather City Application
-                p Search your place and the weather information
+                h1 Weather City Web-App
+                p Search your place and the weather
                 p.specific
                   | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
                 a(href='https://weather-city-pro.herokuapp.com/' target="_blank")
@@ -117,7 +126,23 @@ body
           button.carousel__indicator
           button.carousel__indicator
           button.carousel__indicator
+          button.carousel__indicator
+
     section.work-list
+      ul.list
+        #head
+          li
+            button.work__button Text For You
+        #tag-tag
+          li#tag
+            | Kotlin
+          li#tag
+            | Jetpack Library
+          li#tag
+            | SQLite
+          li#tag
+            | Android Studio
+      
       ul.list
         #head
           li
@@ -206,11 +231,6 @@ body
             | express-js
           li#tag
             | untappd-api
-    
-    button.navigate__profile
-      p Profile Section
-      span.material-icons
-        | arrow_circle_down
 
   .body3
     section.basic_port
@@ -229,23 +249,23 @@ body
           li MINHO's Skill
         #description
           li
-            span#name Programming
-            | Java, Javascript, HTML(PUG/EJS/JSP)            
+            span#name Language
+            | Java, Kotlin, Javascript, HTML(PUG/EJS/JSP)            
           li
             span#name Backend-Framework
-            | Express.js, Spring
+            | Express.js, Spring MVC, Spring boot
           li
             span#name Frontend-Framework
             | React.js
           li
             span#name Database
-            | SQL, MongoDB
+            | MYSQL, MongoDB, SQLite
           li
             span#name Web-Server
             | Nginx, Tomcat
           li
             span#name Amazon Web Service
-            | EC2, SES, S3
+            | EC2, RDS, S3, SES
       ul.list
         #title
           li What MINHO keep learning
@@ -253,30 +273,30 @@ body
           li.skillBox
             p 
               a(href='https://www.sait.ca/programs-and-courses/full-time-studies/diplomas/information-technology' target="_blank") SAIT - Software Development Diploma
-            p 60%
+            p 80%
             .skill
-              .skill_level(style='width:60%;')
+              .skill_sait
+                .skill_level
           li.skillBox
             p 
               a(href='https://www.coursera.org/specializations/data-structures-algorithms?' target="_blank") Coursera - Data Structure and Algorithms
-            p 30%
+            p 50%
             .skill
-              .skill_level(style='width:30%;')
+              .skill_algo
+                .skill_level
           li.skillBox
             p 
               a(href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank") AWS Certified Developer - Associate
-            p 15%
+            p 30%
             .skill
-              .skill_level(style='width:15%;')
+              .skill_aws
+                .skill_level
           li.skillBox
             p Coding &amp; Programming
             p Never Ending
             .skill
-              .skill_level(style='width:5%;')
-      button.navigate__contact
-        p Contact Section
-        span.material-icons
-          | arrow_circle_down
+              .skill_code
+                .skill_level
 
   .body4
     section.contact
@@ -302,6 +322,6 @@ body
         i.fa.fa-linkedin
       a.middle(href='https://github.com/MinhoChoi-a' target="_blank")
         i.fa.fa-github
-      h4 MINHO STUDIO &copy;2020
-    script(src='js/portfolio.js')
+      h4 MINHO STUDIO &copy;2020-2021
+    script(src='js/portfolio1223.js')
     script(src='js/ajax.js')

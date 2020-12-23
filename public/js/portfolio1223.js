@@ -145,14 +145,9 @@ worksButton.addEventListener('click', e=> {
 
 const moveButton = document.querySelector('.intro button');
 
-
-const profileButton = document.querySelector('.navigate__profile');
-
 const profileSection = document.querySelector('.body2');
 const moveHeight = profileSection.offsetHeight + height;
 
-
-const contactButton = document.querySelector('.navigate__contact');
 const contactSection = document.querySelector('.body3');
 const moveHieghtContact = contactSection.offsetHeight + moveHeight;
 
@@ -171,37 +166,21 @@ function myFunction() {
     document.querySelector('.works').style.padding='0px 0px 0px 0px';
     navbar.classList.remove("sticky");
   }
+  
+  if (window.pageYOffset > moveHeight) {
 
-  if (window.pageYOffset >= height-(height/7)){
-    document.querySelector('.navigate__profile').style.display='flex';
+    document.querySelector('.skill_sait').firstChild.style.width='80%';
+    document.querySelector('.skill_algo').firstChild.style.width='50%';
+    document.querySelector('.skill_aws').firstChild.style.width='30%';
+    document.querySelector('.skill_code').firstChild.style.width='10%';
   }
 
-  else{
-    document.querySelector('.navigate__profile').style.display='none';
-  }
 
-  if (window.pageYOffset >= moveHeight-(moveHeight/9)){
-    document.querySelector('.navigate__contact').style.display='flex';
-  }
-
-  else{
-    document.querySelector('.navigate__contact').style.display='none';
-  }
 }
 
 
 moveButton.addEventListener('click', e => {
     window.scrollTo({top:height,left:0, behavior:'smooth'});
-})
-
-profileButton.addEventListener('click', e => {
-    contactSection.scrollIntoView({behavior:'smooth'});
-    //window.scrollTo({top:moveHeight,left:0, behavior:'smooth'});
-})
-
-contactButton.addEventListener('click', e => {
-    finalSection.scrollIntoView({behavior:'smooth'});
-    //window.scrollTo({top:moveHieghtContact,left:0, behavior:'smooth'});
 })
 
 const navWorkBut = document.querySelector('.nav-link_work');
@@ -221,14 +200,3 @@ const navContactBut = document.querySelector('.nav-link_contact');
 navContactBut.addEventListener('click', e => {
     finalSection.scrollIntoView({behavior:'smooth'});
 });
-
-const navAboutBut = document.querySelector(".nav-link_about");
-
-navAboutBut.addEventListener('click', e=> {
-    console.log("click about");
-    window.location.href="http://minhoproject.studio";
-})
-
-function clickAbout() {
-    window.location.href="http://www.minhoproject.studio/";
-}

@@ -20,11 +20,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
 
 router.get('/', function (req, res) {
-    res.render('index');
+    res.render('index1223');
 });
 
 router.get('/privacy', function (req, res) {
-  res.render('privacy');
+  res.render('privacy1223');
 });
 
 const ses = require('./public/js/ses');

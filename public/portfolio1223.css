@@ -17,8 +17,7 @@ button {
 
 .intro {
     height: 100vh;
-    width: 100%;
-    margin: auto;
+    width: 100%;    
     top: 0;
     display: table;
     overflow: hidden;
@@ -255,6 +254,7 @@ button {
     border: 1px solid var(--accent_main);
     border-radius: 50px;
     padding: 2px 12px 2px 12px;
+    margin-right: 5px;
     bottom:0;
     box-shadow: 3px 3px var(--accent_main);
 
@@ -473,6 +473,8 @@ button {
     background: var(--accent_main);
     width:100%;
     height:10px;
+    width:0%;
+    transition: ease-in-out 1s;
 }
 
 
@@ -669,15 +671,20 @@ button {
 
     .body2 {
         height: auto;
+        padding-bottom:50px;
     }
 
     .body2 .specific {
         display: none;
     }
 
+    .body2 .work__button {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
     .body3 {
-        height:auto;
-        padding-top: 50px;
+        height:auto;        
     }
 
     .body3 .basic_port {

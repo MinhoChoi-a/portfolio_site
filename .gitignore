@@ -7,4 +7,4 @@
 # credentials
 .env
 
-.txt
+*.txt
