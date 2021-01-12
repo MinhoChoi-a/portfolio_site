@@ -149,7 +149,7 @@ button {
 /* carousel */
 .carousel {
     position: relative;
-    height: 300px;
+    height: 350px;
     width: 100%;
     margin: 0 auto;
 }
@@ -163,6 +163,9 @@ button {
     width: 100%;
     position: relative;
     overflow: hidden;
+
+    background: url('img/back3.jpg');
+    background-position: cover;
 }
 
 .carousel__track {
@@ -178,13 +181,9 @@ button {
     position: absolute;
     top: 0;
     bottom: 0;
+    padding-top: 30px;
     width: 100%;
-
-    background: url('img/back3.jpg');
-    background-position: cover;
-    
     max-width: none;
-
     display: flex;
     justify-content: center;
    
@@ -239,10 +238,12 @@ button {
 .is-hidden {display: none}
 
 .carousel__track .carousel__slide .content {
-    position: absolute;
+    position: relative;
     width: 90%;
     height: 85%;
-    background-color: rgba(255,255,255, 0.5);
+    background-color: rgba(255,255,255, 0.3);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
     padding: 30px;
     
 }
@@ -250,13 +251,13 @@ button {
 .carousel__track .carousel__slide .content .link{
 
     color: var(--text_main);
-    background: var(--bg);
-    border: 1px solid var(--accent_main);
+    background: rgba(255,255,255, 0.7);
+    border: none;    
     border-radius: 50px;
     padding: 2px 12px 2px 12px;
     margin-right: 5px;
     bottom:0;
-    box-shadow: 3px 3px var(--accent_main);
+    box-shadow: 3px 3px rgba(0,0,0,0.2);
 
 }
 
@@ -314,10 +315,12 @@ button {
     
     font-size: 15px;
     background-color: var(--accent_main);
+    border-radius: 10px;
     margin-left: 10px;
+    margin-top: 1px;
     padding: 2px 12px 2px 12px;
     color: var(--text_main);
-    border: 0.1em solid var(--bg);
+    
     
 }
 
@@ -672,6 +675,10 @@ button {
     .body2 {
         height: auto;
         padding-bottom:50px;
+    }
+
+    .body2 h1{
+        font-size: 35px;
     }
 
     .body2 .specific {

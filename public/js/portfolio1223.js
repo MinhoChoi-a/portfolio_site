@@ -167,7 +167,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
   
-  if (window.pageYOffset > moveHeight) {
+  if (window.pageYOffset > moveHeight-100) {
 
     document.querySelector('.skill_sait').firstChild.style.width='80%';
     document.querySelector('.skill_algo').firstChild.style.width='50%';
