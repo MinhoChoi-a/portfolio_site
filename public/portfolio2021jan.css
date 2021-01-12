@@ -1,5 +1,5 @@
 :root {
-    --bg_main: #82cdc8;
+    --bg_main: white;
     --bg : #c4e6e5;
     --text_main: #022249;
     --accent_main: #f27d42;
@@ -9,6 +9,11 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+
+    background: url(img/newback.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
 }
 
 button {
@@ -34,7 +39,7 @@ button {
 .intro .inner {
     display: table-cell;
     vertical-align: middle;
-    width: 100%;
+    width: 100%;    
 }
  
 .intro .inner #content {
@@ -58,20 +63,20 @@ button {
 
 
 .intro .inner #content button{
-    color: var(--text_main);
+    color: white;
     font-size: 2em;
     background: none;
-    border: 2px solid var(--accent_main);
+    border: 5px solid var(--accent_main);
     padding: 10 20 10 20;
-    border-radius: 20px;
+    border-radius: 25px;
     margin-top: 20px;
     outline:none;
 }
 
 .intro .inner #content button:hover{
-    color: var(--bg_main);
-    background: var(--text_main);
-    border: 2px solid var(--text_main);
+    color: var(--text_main);
+    background: rgba(255,255,255, 0.5);
+    border: none;
     transition-duration: 0.5s;    
 }
 
@@ -95,7 +100,7 @@ button {
 }
 
 .navbar {
-   background-color: var(--bg_main);
+   background-color: rgba(2, 34, 73, 0.8);
    width: 100%;
 }
 
@@ -113,7 +118,8 @@ button {
 }
 
 .navbar .navbar-brand, .navbar button {
-    color: white;
+    color: var(--bg);
+    font-weight: bolder;
 }
 
 .navbar ul li{
@@ -122,14 +128,14 @@ button {
 
 
 .navbar button:hover{
-    color: var(--text_main);
+    color: white
 }
 
 
 .body2 {
     height: 100vh;
     display: block;
-    background: #c4e6e5;
+    
 }
 
 .body2_privacy {
@@ -158,14 +164,16 @@ button {
     outline: none;
 }
 
+.carousel__nav button {
+    background-color: rgba(255,255,255, 0.5);
+}
+
+
 .carousel__track-container {
     height: 100%;
     width: 100%;
     position: relative;
     overflow: hidden;
-
-    background: url('img/back3.jpg');
-    background-position: cover;
 }
 
 .carousel__track {
@@ -189,6 +197,11 @@ button {
    
 }
 
+
+.carousel__slide p{
+    font-weight: bolder;   
+}
+
 .carousel__button {
     z-index: 99;
     position: absolute;
@@ -208,6 +221,7 @@ button {
 
 .carousel__button--right{
     right: 0px;
+    
 }
 
 .carousel__button img{
@@ -241,7 +255,7 @@ button {
     position: relative;
     width: 90%;
     height: 85%;
-    background-color: rgba(255,255,255, 0.3);
+    background-color: rgba(255,255,255, 0.6);
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius: 25px;
     padding: 30px;
@@ -251,10 +265,10 @@ button {
 .carousel__track .carousel__slide .content .link{
 
     color: var(--text_main);
-    background: rgba(255,255,255, 0.7);
+    background: rgba(255,255,255, 0.5);
     border: none;    
     border-radius: 50px;
-    padding: 2px 12px 2px 12px;
+    padding: 5px 15px 5px 15px;
     margin-right: 5px;
     bottom:0;
     box-shadow: 3px 3px rgba(0,0,0,0.2);
@@ -288,7 +302,7 @@ button {
     font-size: 20px;
     background: var(--text_main);
     color: var(--bg);
-    box-shadow: 5px 5px var(--bg_main);
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
 }
 
 .work-list .list #head:hover{
@@ -314,7 +328,8 @@ button {
     text-align: center;
     
     font-size: 15px;
-    background-color: var(--accent_main);
+    
+    background-color: rgba(255,255,255, 0.5);
     border-radius: 10px;
     margin-left: 10px;
     margin-top: 1px;
@@ -361,7 +376,6 @@ button {
 
 .body3 {
     height: 100vh;
-    background: #c4e6e5;
     padding-top: 100px;
     position: relative;
     display: flex;
@@ -377,26 +391,29 @@ button {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-
+    
     position: relative;
 }
 
 .body3 .basic_port img{
     
-    height: 200px;
+    height: 200px;    
 }
 
 .body3 .basic_port .text{
     
     padding: 20px;
     width: 350px;
-    height: 100%;
-    margin-bottom: 0px;
+
+    background-color: rgba(255,255,255, 0.6);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 30px;
 }
 
 .body3 .basic_port .text .name{
     color: var(--accent_main);
-    
+    font-weight: bolder;    
 }
 
 .body3 .basic_port .text p{
@@ -404,31 +421,31 @@ button {
 }
 
 
-.body3 .learning {
-    
+.body3 .learning {    
     width:90%;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    
+
+    background-color: rgba(255,255,255, 0.6);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    padding: 30px;
 }
 
 .body3 .learning ul{
     list-style: none;
     width: 100%;
-    padding:0;
+    padding:0;   
 }
 
 .body3 .learning #title {
     list-style: none;
-    padding-left: 20px;   
     width: 100%;
     font-size: 20px;
-    background: var(--text_main);
-    color: var(--bg);
-    box-shadow: 5px 5px var(--bg_main);
+    color: var(--text_main);    
 }
 
 .body3 .learning #description, #description_p{
@@ -440,12 +457,11 @@ button {
 }
 
 .body3 .learning #description li #name {
-    margin-left: 10px;
-    background: var(--accent_main);
-    padding: 2px 7px 2px 7px;
+    font-weight: bolder;
     margin-bottom: 10px;
     margin-right: 10px;
     font-size: 17px;
+    color: var(--accent_main);
 }
 
 .body3 .skillBox a {
@@ -457,7 +473,7 @@ button {
 
 .body3 .skillBox p {
     margin: 0 0 1px;
-    padding: 0;
+    padding: 0;    
 }
 
 .body3 .skillBox p:nth-child(2) {
@@ -470,14 +486,16 @@ button {
 .body3 .skill {
     background: white;
     text-align: right;
+    border-radius: 5px;
 }
 
 .body3 .skill_level {
-    background: var(--accent_main);
+    background: var(--text_main);
     width:100%;
     height:10px;
     width:0%;
     transition: ease-in-out 1s;
+    border-radius: 5px;
 }
 
 
@@ -518,7 +536,6 @@ button {
 
 .body4 {
     height: 100vh;
-    background: #c4e6e5;
     padding-top: 100px;
     position: relative;
     display: flex;
@@ -549,7 +566,7 @@ button {
 .body4 form table{
     width: 100%;
     margin: 0;
-    box-shadow: 3px 3px var(--bg_main);
+    box-shadow: 10px 10px rgba(0,0,0,0.2);    
 }
 
 .body4 form table input, textarea {
@@ -566,28 +583,28 @@ button {
 }
 
 .body4 form button{
-    margin-top: 10px;
+    margin-top: 15px;
     align-self: flex-end;
     border: none;
     background-color: var(--text_main);
     padding: 2px 10px 2px 10px;
     color: var(--bg);
-    box-shadow: 3px 3px var(--bg_main);
+    box-shadow: 5px 5px rgba(0,0,0,0.2);    
     outline:none;
 }
 
 .body4 form button:hover {
-    box-shadow: 3px 3px var(--accent_main);
+    box-shadow: 5px 5px var(--accent_main);
     transition: ease-in-out 0.3s;
 }
 
 .body4 .thanks
 {
     margin-top: 50px;
-    background-color: white;
+    background-color: rgba(255,255,255, 0.6);
     width: 352px;
     height: 178.4px;
-    box-shadow: 3px 3px var(--bg_main);
+    box-shadow: 5px 5px rgba(0,0,0,0.2);
     padding: 20px;
     align-items: center;
 }
@@ -601,7 +618,7 @@ button {
 .body4 .foot {
     position:absolute;
     width: 100%;
-    background-color: var(--text_main);
+    background-color: rgba(2, 34, 73, 0.8);
     color: var(--bg);
     padding: 50px;
     margin-top: 50px;
@@ -696,13 +713,17 @@ button {
 
     .body3 .basic_port {
         flex-direction: column;
-        height: 432px;
-        margin-bottom: 0px;
+        margin-bottom: 0px;        
     }
     
+    .body3 .basic_port .text {
+        width: 95%;
+    }
+
     .body3 .learning {
         margin-top: 40px;
         flex-direction: column;
+        padding: 15px;
     }
 
     .body3 .learning #description li #name {
@@ -724,10 +745,6 @@ button {
         padding-top: 25px;
     }
 
-}
-
-@media screen and (max-width: 700px) {
-    
     .body2 .navigate__profile {
         position:relative;
         
@@ -739,7 +756,13 @@ button {
         
         margin-bottom: 0px;
     }
+}
 
+@media screen and (max-width: 400px) {
+    
+    .body3 .skillBox .percent {
+        display:none;
+    }
     
 }
 
