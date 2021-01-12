@@ -542,7 +542,7 @@ button {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    
+    margin-top: 400px;
 }
 
 .body4_privacy {
@@ -737,7 +737,7 @@ button {
 
     .body4 {
         height: auto;
-        
+        margin-top:0;
     }
 
     .body4 .foot {
