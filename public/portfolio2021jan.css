@@ -56,17 +56,19 @@ button {
 
 .intro .inner .title p{
     color: var(--accent_main);
-    margin-bottom: 0;
-    font-size: 40px;
+        margin-bottom: 0;
+    font-size: 45px;
 }
 
 
 
 .intro .inner #content button{
-    color: white;
     font-size: 2em;
     background: none;
-    border: 5px solid var(--accent_main);
+    color: var(--text_main);
+    background: rgba(255,255,255, 0.5);
+    box-shadow:5px 5px rgba(0,0,0,0.0);
+    border: none;
     padding: 10 20 10 20;
     border-radius: 25px;
     margin-top: 20px;
@@ -74,9 +76,7 @@ button {
 }
 
 .intro .inner #content button:hover{
-    color: var(--text_main);
-    background: rgba(255,255,255, 0.5);
-    border: none;
+    box-shadow:5px 5px rgba(0,0,0,0.5);
     transition-duration: 0.5s;    
 }
 
@@ -388,7 +388,7 @@ button {
     
     width: 90%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     
@@ -573,6 +573,7 @@ button {
     width: 350px;
     overflow: auto;
     border: none;
+    background: rgba(255,255,255, 0.8);
     color: var(--text_main);
     padding: 5px;
     outline: none;
