@@ -20,7 +20,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/', router);
 
 router.get('/', function (req, res) {
-    res.render('index2021jan');
+    res.render('index20210113');
 });
 
 router.get('/privacy', function (req, res) {

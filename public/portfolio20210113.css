@@ -56,7 +56,8 @@ button {
 
 .intro .inner .title p{
     color: var(--accent_main);
-        margin-bottom: 0;
+    text-shadow:1px 2px rgba(0,0,0,0.5);
+    margin-bottom: 0;
     font-size: 45px;
 }
 
@@ -67,7 +68,7 @@ button {
     background: none;
     color: var(--text_main);
     background: rgba(255,255,255, 0.5);
-    box-shadow:5px 5px rgba(0,0,0,0.0);
+    box-shadow:5px 5px rgba(0,0,0,0.5);
     border: none;
     padding: 10 20 10 20;
     border-radius: 25px;
@@ -76,7 +77,7 @@ button {
 }
 
 .intro .inner #content button:hover{
-    box-shadow:5px 5px rgba(0,0,0,0.5);
+    box-shadow:10px 10px rgba(0,0,0,0.5);
     transition-duration: 0.5s;    
 }
 
@@ -407,13 +408,13 @@ button {
 
     background-color: rgba(255,255,255, 0.6);
     box-shadow: 10px 10px rgba(0,0,0,0.2);
-    border-radius: 25px;
-    padding: 30px;
+    border-radius: 25px;    
 }
 
 .body3 .basic_port .text .name{
     color: var(--accent_main);
-    font-weight: bolder;    
+    font-weight: bolder;
+    font-size: 20px;    
 }
 
 .body3 .basic_port .text p{
@@ -445,6 +446,7 @@ button {
     list-style: none;
     width: 100%;
     font-size: 20px;
+    font-weight: bolder;
     color: var(--text_main);    
 }
 
@@ -718,7 +720,7 @@ button {
     }
     
     .body3 .basic_port .text {
-        width: 95%;
+        width: 100%;
     }
 
     .body3 .learning {
