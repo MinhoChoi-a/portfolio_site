@@ -377,12 +377,12 @@ button {
 
 .body3 {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 0px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    transition-duration: 1s;   
 }
 
 .body3 .basic_port {
@@ -394,11 +394,14 @@ button {
     justify-content: center;
     
     position: relative;
+    opacity: 0%;
+    transition-duration: 1s;       
 }
 
 .body3 .basic_port img{
     
-    height: 200px;    
+    height: 200px;
+    
 }
 
 .body3 .basic_port .text{
@@ -424,7 +427,7 @@ button {
 
 .body3 .learning {    
     width:90%;
-    margin-top: 30px;
+    margin-top: 0px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -434,6 +437,9 @@ button {
     box-shadow: 10px 10px rgba(0,0,0,0.2);
     border-radius: 25px;
     padding: 30px;
+
+    opacity: 0%;
+    transition-duration: 1s;
 }
 
 .body3 .learning ul{
@@ -538,13 +544,16 @@ button {
 
 .body4 {
     height: 100vh;
-    padding-top: 100px;
+    padding-top: 0px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     margin-top: 400px;
+
+    opacity: 0%;
+    transition-duration: 1s;
 }
 
 .body4_privacy {

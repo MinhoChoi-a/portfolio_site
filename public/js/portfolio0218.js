@@ -153,7 +153,11 @@ const moveHieghtContact = contactSection.offsetHeight + moveHeight;
 
 const finalSection = document.querySelector('.body4');
 
+const basic__port = document.querySelector('.basic_port');
+
 function myFunction() {
+
+    console.log(window.pageYOffset);
   
   if (window.pageYOffset >= height-50) {
     document.querySelector('.mainNav').style.display='block';
@@ -167,14 +171,51 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
   
-  if (window.pageYOffset > moveHeight-100) {
+  if (window.pageYOffset > profileSection.offsetHeight+500) {
+    contactSection.style.paddingTop='100px';
+    basic__port.style.opacity='100%';
+  }
 
+  else {
+    contactSection.style.paddingTop='0px';
+    basic__port.style.opacity='0%';
+  }
+
+  if(window.pageYOffset > profileSection.offsetHeight+1000){
+     document.querySelector('.learning').style.opacity='100%';
+     document.querySelector('.learning').style.marginTop='30px';
+  }
+
+  else {
+    document.querySelector('.learning').style.opacity='0%';
+    document.querySelector('.learning').style.marginTop='0px';
+  }
+
+
+  if (window.pageYOffset > moveHeight-100) {
     document.querySelector('.skill_sait').firstChild.style.width='80%';
     document.querySelector('.skill_algo').firstChild.style.width='50%';
     document.querySelector('.skill_aws').firstChild.style.width='30%';
     document.querySelector('.skill_code').firstChild.style.width='10%';
   }
 
+  else {
+    document.querySelector('.skill_sait').firstChild.style.width='0%';
+    document.querySelector('.skill_algo').firstChild.style.width='0%';
+    document.querySelector('.skill_aws').firstChild.style.width='0%';
+    document.querySelector('.skill_code').firstChild.style.width='0%';
+  }
+
+  if(window.pageYOffset > moveHieghtContact-50) {
+
+    document.querySelector('.body4').style.paddingTop='100px';
+    document.querySelector('.body4').style.opacity='100%';
+  }
+
+  else {
+    document.querySelector('.body4').style.paddingTop='0px';
+    document.querySelector('.body4').style.opacity='0%';
+  }
 
 }
 
