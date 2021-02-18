@@ -156,8 +156,6 @@ const finalSection = document.querySelector('.body4');
 const basic__port = document.querySelector('.basic_port');
 
 function myFunction() {
-
-    console.log(window.pageYOffset);
   
   if (window.pageYOffset >= height-50) {
     document.querySelector('.mainNav').style.display='block';
