@@ -9,6 +9,10 @@ const worksButton = document.querySelector('.work-list');
 const buttons = document.querySelectorAll('.work__button');
 var buttonsArray = Array.from(buttons);
 
+const heads = document.querySelector('.head');
+const head = document.querySelectorAll('.head');
+var headButtonArray = Array.from(head);
+
 const slideSize = slides[0].getBoundingClientRect();
 const slideWidth = slideSize.width;
 
@@ -123,16 +127,19 @@ worksButton.addEventListener('click', e=> {
 
     const currentSlide = track.querySelector('.current');
     const currentDot = dotsNavs.querySelector('.current');
+    const currentHead = worksButton.querySelector('.current');
     const targetIndex = buttonsArray.findIndex(button => button === targetWork);
     const targetSlide = slides[targetIndex];
 
     const targetDot = dots[targetIndex];
 
+    currentHead.classList.remove('current');
+    headButtonArray[targetIndex].classList.add('current');        
+
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
-    hideShowArrow(slides, prevButton, nextButton, targetIndex); 
+    hideShowArrow(slides, prevButton, nextButton, targetIndex);    
 
-    console.log(height);
 
     window.scrollTo({
         top: height,
@@ -182,29 +189,22 @@ function myFunction() {
   if(window.pageYOffset > profileSection.offsetHeight+1000){
      document.querySelector('.learning').style.opacity='100%';
      document.querySelector('.learning').style.marginTop='30px';
-  }
-
-  else {
-    document.querySelector('.learning').style.opacity='0%';
-    document.querySelector('.learning').style.marginTop='0px';
-  }
-
-
-  if (window.pageYOffset > moveHeight-100) {
-    document.querySelector('.skill_sait').firstChild.style.width='80%';
+     document.querySelector('.skill_sait').firstChild.style.width='95%';
     document.querySelector('.skill_algo').firstChild.style.width='50%';
     document.querySelector('.skill_aws').firstChild.style.width='30%';
     document.querySelector('.skill_code').firstChild.style.width='10%';
   }
 
   else {
+    document.querySelector('.learning').style.opacity='0%';
+    document.querySelector('.learning').style.marginTop='0px';
     document.querySelector('.skill_sait').firstChild.style.width='0%';
     document.querySelector('.skill_algo').firstChild.style.width='0%';
     document.querySelector('.skill_aws').firstChild.style.width='0%';
     document.querySelector('.skill_code').firstChild.style.width='0%';
   }
 
-  if(window.pageYOffset > moveHieghtContact-50) {
+  if(window.pageYOffset > moveHieghtContact-100) {
 
     document.querySelector('.body4').style.paddingTop='100px';
     document.querySelector('.body4').style.opacity='100%';

@@ -6,7 +6,7 @@ head
   
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
   
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
   
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -17,10 +17,10 @@ head
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
   
-  link(rel='stylesheet', href='portfolio0218.css')
+  link(rel='stylesheet', href='portfolio0313.css')
   meta(name='description' content='Web site')
   
-  title MINHO STUDIO
+  title MINHO CHOI
 
 body
   section.intro
@@ -33,7 +33,7 @@ body
   .mainNav
      nav(class="navbar navbar-expand-md")
         div(class="container-fluid")
-          button(class="navbar-brand") MINHO STUDIO
+          button(class="navbar-brand") MINHO CHOI
           
           button(class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation")
             span(class="material-icons") menu
@@ -72,17 +72,7 @@ body
                 a(href='https://www.bakingbunny.shop/' target="_blank")
                   button.link
                     | Go to Site                
-            li.carousel__slide
-              .content
-                h1 Car Rental Manager
-                p CRUD web application developed with Node.js & MongoDB & AWS S3
-                p.specific
-                  | Users can register their cars with image and search the available car in a specific date. This site is developed with AWS S3 and mongoDB
-                a(href='https://car-rental-manager.herokuapp.com' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing' target="_blank")
-                  button.link View Code
+            
             li.carousel__slide
               .content
                 h1 YouTube Cooking Chef
@@ -96,17 +86,6 @@ body
                   button.link View Code
             li.carousel__slide
               .content
-                h1 Weather City Web-App
-                p Weather information app developed with Vanilla.js
-                p.specific
-                  | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
-                a(href='https://weather-city-pro.herokuapp.com/' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/MinhoChoi-a/P3-Weather_App' target="_blank")
-                  button.link View Code
-            li.carousel__slide
-              .content
                 h1 All Beer Vibes Web-App
                 p Beer search & suggestion app developed with Node.js & MongoDB
                 p.specific
@@ -115,6 +94,28 @@ body
                   button.link
                     | Go to Site
                 a(href='https://github.com/AllBeerVibes/AllBeerVibes' target="_blank")
+                  button.link View Code
+            li.carousel__slide
+              .content
+                h1 Weather City Web-App
+                p Weather information app developed with Vanilla.js
+                p.specific
+                  | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
+                a(href='https://weather-city-pro.herokuapp.com/' target="_blank")
+                  button.link
+                    | Go to Site
+                a(href='https://github.com/MinhoChoi-a/P3-Weather_App' target="_blank")
+                  button.link View Code            
+            li.carousel__slide
+              .content
+                h1 Car Rental Manager
+                p CRUD web application developed with Node.js & MongoDB & AWS S3
+                p.specific
+                  | Users can register their cars with image and search the available car in a specific date. This site is developed with AWS S3 and mongoDB
+                a(href='https://car-rental-manager.herokuapp.com' target="_blank")
+                  button.link
+                    | Go to Site
+                a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing' target="_blank")
                   button.link View Code
                 
         button.carousel__button.carousel__button--right
@@ -129,9 +130,11 @@ body
 
     section.work-list
       ul.list
-        #head
+        .head.current
           li
             button.work__button Text For You
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
         #tag-tag
           li#tag
             | Kotlin
@@ -143,9 +146,11 @@ body
             | Android Studio
       
       ul.list
-        #head
+        .head
           li
             button.work__button Baking Bunny Order
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
         #tag-tag
           li#tag
             | pug
@@ -163,9 +168,64 @@ body
             | GoogleMap-api
           
       ul.list
-        #head
+        .head
+          li
+            button.work__button YouTube Chef
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
+        #tag-tag
+          li#tag
+            | material-ui
+          li#tag
+            | react.js
+          li#tag
+            | youtube-api
+      
+      ul.list
+        .head
+          li
+            button.work__button All Beer Vibes
+              .clickable more
+                <i class="fas fa-angle-right"></i>
+        #tag-tag
+          li#tag
+            | ejs
+          li#tag
+            | css
+          li#tag
+            | javascript
+          li#tag
+            | bootstrap
+          li#tag
+            | passport.js
+          li#tag
+            | express-js
+          li#tag
+            | untappd-api
+      
+      ul.list
+        .head
+          li
+            button.work__button Weather City
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
+        #tag-tag
+          li#tag
+            | html
+          li#tag
+            | css
+          li#tag
+            | vanilla-js
+          li#tag
+            | express-js
+          li#tag
+            | openweathermap-api
+      ul.list
+        .head
           li
             button.work__button Car Rental Manager
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
         #tag-tag
           li#tag
             | pug
@@ -185,52 +245,6 @@ body
             | AWS-S3
           li#tag
             | MVC-model
-      ul.list
-        #head
-          li
-            button.work__button YouTube Chef
-        #tag-tag
-          li#tag
-            | material-ui
-          li#tag
-            | react.js
-          li#tag
-            | youtube-api
-      ul.list
-        #head
-          li
-            button.work__button Weather City
-        #tag-tag
-          li#tag
-            | html
-          li#tag
-            | css
-          li#tag
-            | vanilla-js
-          li#tag
-            | express-js
-          li#tag
-            | openweathermap-api
-      ul.list
-        #head
-          li
-            button.work__button All Beer Vibes
-        #tag-tag
-          li#tag
-            | ejs
-          li#tag
-            | css
-          li#tag
-            | javascript
-          li#tag
-            | bootstrap
-          li#tag
-            | passport.js
-          li#tag
-            | express-js
-          li#tag
-            | untappd-api
-
   .body3
     section.basic_port
       .image
@@ -238,10 +252,11 @@ body
       .text
         p.name
           | MINHO CHOI
-        p
-          | With the knowledge of programming and data structuring, I have been trying to solve problems around me, also eager to make a useful application.
-          | I started to learn the Software Development course at SAIT(diploma in Information Technology) in 2019.
-          | It helped me to gain a deep understanding of programming. Now, I’m in the final stage of the course and waiting for opportunities to work as a software developer.
+        p With the knowledge of programming and data structuring, I always try to solve problems around me, also eager to make a useful application.
+        p Now, I’m in the final stage of the study in SAIT(Information Technology Diploma in Software development major). 
+        p Hope that I can get a chance to work as a software developer/engineer.
+      .below
+        <i class="fas fa-angle-double-down"></i>
     section.learning
       ul.list
         #title
@@ -267,12 +282,12 @@ body
             | EC2, RDS, S3, SES
       ul.list
         #title
-          li What MINHO keep learning
+          li MINHO's Learning
         #description_p
           li.skillBox
             p 
               a(href='https://www.sait.ca/programs-and-courses/full-time-studies/diplomas/information-technology' target="_blank") SAIT - Software Development Diploma
-            p.percent 90%
+            p.percent 95%
             .skill
               .skill_sait
                 .skill_level
@@ -292,7 +307,7 @@ body
                 .skill_level
           li.skillBox
             p Coding &amp; Programming
-            p Never Ending
+            p.percent Never Ending
             .skill
               .skill_code
                 .skill_level
@@ -318,9 +333,14 @@ body
 
     .foot
       a(href='https://www.linkedin.com/in/minhochoi/' target="_blank")
-        i.fa.fa-linkedin
-      a.middle(href='https://github.com/MinhoChoi-a' target="_blank")
-        i.fa.fa-github
-      h4 MINHO STUDIO &copy;2020-2021
-    script(src='js/portfolio0218.js')
+        <i class="fab fa-linkedin-in" style="margin-right: 5px; margin-left:5px;"></i>
+      a(href='https://github.com/MinhoChoi-a' target="_blank")
+        <i class="fab fa-github" style="margin-right: 5px; margin-left:5px;"></i>
+      a(href='https://www.youtube.com/channel/UCkfm-dWpRnvI9RPwhgFk7RA' target="_blank")
+        <i class="fab fa-youtube" style="margin-right: 5px; margin-left:5px;"></i>
+      a(href='https://minhochoi-a.blogspot.com' target="_blank")
+        <i class="fab fa-blogger" style="margin-right: 5px; margin-left:5px;"></i>
+      h4 MINHO CHOI &copy;2020-2021
+    
+    script(src='js/portfolio0313.js')
     script(src='js/ajax.js')

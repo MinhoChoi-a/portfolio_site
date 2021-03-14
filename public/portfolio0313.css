@@ -181,7 +181,7 @@ button {
     list-style: none;
     padding: 0;
     margin: 0;
-    transition: transform 1.2s ease-in;
+    transition: transform 0.5s ease-in;
     height: 100%;
 }
 
@@ -296,9 +296,24 @@ button {
     margin: auto;
     margin-bottom: 20px;
     padding:0;
-}    
+}
 
-.work-list .list #head{
+
+.work-list .clickable {
+    position:relative; 
+    align-self: flex-end;
+    font-size:10px; 
+    margin-bottom:0px;
+    margin-top:0px;
+}
+
+.work-list li i{
+    margin-left: 3px;
+    margin-right: 2px;
+    font-weight: 50;
+}
+
+.work-list .list .head{
     list-style: none;
     font-size: 20px;
     background: var(--text_main);
@@ -306,14 +321,11 @@ button {
     box-shadow: 5px 5px rgba(0,0,0,0.2);
 }
 
-.work-list .list #head:hover{
-    
+.work-list .list .current{
     box-shadow: 5px 5px var(--accent_main);
-    transition: 0.3s ease-out;
-    
 }
 
-.work-list .list #head Button{
+.work-list .list .head Button{
     background: none;
     color: var(--bg);
     border: none;
@@ -336,9 +348,11 @@ button {
     margin-top: 1px;
     padding: 2px 12px 2px 12px;
     color: var(--text_main);
-    
-    
 }
+
+
+
+
 
 .body2 .navigate__profile {
     
@@ -387,10 +401,10 @@ button {
 
 .body3 .basic_port {
     
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     
     position: relative;
@@ -400,14 +414,16 @@ button {
 
 .body3 .basic_port img{
     
+    align-self: flex-start;
     height: 200px;
+    margin-left:15px;
     
 }
 
 .body3 .basic_port .text{
     
     padding: 20px;
-    width: 350px;
+    width: 100%;
 
     background-color: rgba(255,255,255, 0.6);
     box-shadow: 10px 10px rgba(0,0,0,0.2);
@@ -424,9 +440,17 @@ button {
     margin-bottom: 0px;
 }
 
+.body3 .below {
+    font-size: 50px;
+    margin-top: 20px;
+    color: var(--text_main);
+    align-self: center;
+
+}
+
 
 .body3 .learning {    
-    width:90%;
+    width:80%;
     margin-top: 0px;
     display: flex;
     flex-direction: row;
@@ -770,12 +794,21 @@ button {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
     
     .body3 .skillBox .percent {
         display:none;
     }
     
+    .body4 form table input, textarea {
+        width:300px;
+    }
+    .body4 form table input .text{
+        width:300px;
+    }   
+    .body4 .thanks {
+        width:302px;
+    }
 }
 
 
