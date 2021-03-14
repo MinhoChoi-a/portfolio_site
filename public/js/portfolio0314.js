@@ -85,6 +85,10 @@ prevButton.addEventListener('click', e => {
 
     const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
+    const currentHead = worksButton.querySelector('.current');
+    currentHead.classList.remove('current');
+    headButtonArray[prevIndex].classList.add('current');        
+
     moveToSlide(track, currentSlide, prevSlide)
     updateDots(currentDot, targetDot);
     hideShowArrow(slides, prevButton, nextButton, prevIndex); 
@@ -98,6 +102,10 @@ nextButton.addEventListener('click', e => {
     const targetDot = currentDot.nextElementSibling;
 
     const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+    const currentHead = worksButton.querySelector('.current');
+    currentHead.classList.remove('current');
+    headButtonArray[nextIndex].classList.add('current');        
 
     moveToSlide(track, currentSlide, nextSlide);
     updateDots(currentDot, targetDot);
@@ -114,11 +122,17 @@ dotsNavs.addEventListener('click', e => {
     const targetIndex = dots.findIndex(dot => dot === targetDot);
     const targetSlide = slides[targetIndex];
 
+    const currentHead = worksButton.querySelector('.current');
+    currentHead.classList.remove('current');
+    headButtonArray[targetIndex].classList.add('current');        
+
+
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
     hideShowArrow(slides, prevButton, nextButton, targetIndex); 
     
 });
+
 
 worksButton.addEventListener('click', e=> {
     const targetWork = e.target.closest('button');
