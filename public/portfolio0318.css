@@ -446,6 +446,8 @@ button {
     margin-top: 20px;
     color: var(--text_main);
     align-self: center;
+    opacity: 0;
+    transition: 0.5s ease-in;
 
 }
 

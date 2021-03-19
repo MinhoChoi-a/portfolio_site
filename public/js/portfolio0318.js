@@ -175,6 +175,8 @@ const moveHieghtContact = contactSection.offsetHeight + moveHeight;
 const finalSection = document.querySelector('.body4');
 
 const basic__port = document.querySelector('.basic_port');
+const port__below = document.querySelector('.below');
+
 
 function myFunction() {
   
@@ -193,11 +195,13 @@ function myFunction() {
   if (window.pageYOffset > profileSection.offsetHeight+500) {
     contactSection.style.paddingTop='100px';
     basic__port.style.opacity='100%';
+    setTimeout((()=> port__below.style.opacity='0.7'), 500);
   }
 
   else {
     contactSection.style.paddingTop='0px';
     basic__port.style.opacity='0%';
+    port__below.style.opacity='0';
   }
 
   if(window.pageYOffset > profileSection.offsetHeight+1000){
