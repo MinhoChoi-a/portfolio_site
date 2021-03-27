@@ -17,7 +17,7 @@ head
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
   
-  link(rel='stylesheet', href='portfolio0318.css')
+  link(rel='stylesheet', href='portfolio0324.css')
   meta(name='description' content='Web site')
   
   title MINHO CHOI
@@ -72,7 +72,15 @@ body
                 a(href='https://www.bakingbunny.shop/' target="_blank")
                   button.link
                     | Go to Site                
-            
+            li.carousel__slide.current
+              .content
+                h1 Calgary Supermarket E-Commerce
+                p REST API developed with Spring boot, MYSQL and AWS
+                p.specific
+                  | Backend system to support CMS and the customer side web page. Frontend is developed with React.js.
+                a(href='https://github.com/SAIT-Capstone-Group-2020/Backend_API_SpringBoot' target="_blank")
+                  button.link
+                    | View Code      
             li.carousel__slide
               .content
                 h1 YouTube Cooking Chef
@@ -106,18 +114,7 @@ body
                     | Go to Site
                 a(href='https://github.com/MinhoChoi-a/P3-Weather_App' target="_blank")
                   button.link View Code            
-            li.carousel__slide
-              .content
-                h1 Car Rental Manager
-                p CRUD web application developed with Node.js & MongoDB & AWS S3
-                p.specific
-                  | Users can register their cars with image and search the available car in a specific date. This site is developed with AWS S3 and mongoDB
-                a(href='https://car-rental-manager.herokuapp.com' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/MinhoChoi-a/P1-Car_Rental_Managing' target="_blank")
-                  button.link View Code
-                
+           
         button.carousel__button.carousel__button--right
           img(src='img/right.svg' alt='')
         .carousel__nav
@@ -127,7 +124,7 @@ body
           button.carousel__indicator
           button.carousel__indicator
           button.carousel__indicator
-
+         
     section.work-list
       ul.list
         .head.current
@@ -166,7 +163,24 @@ body
             | mongoDB
           li#tag
             | GoogleMap-api
-          
+      ul.list
+        .head
+          li
+            button.work__button Supermarket E-Commerce
+              .clickable more
+                  <i class="fas fa-angle-right"></i>
+        #tag-tag
+          li#tag
+            | spring boot
+          li#tag
+            | mysql
+          li#tag
+            | aws
+          li#tag
+            | react.js
+          li#tag
+            | REST API
+                      
       ul.list
         .head
           li
@@ -220,31 +234,7 @@ body
             | express-js
           li#tag
             | openweathermap-api
-      ul.list
-        .head
-          li
-            button.work__button Car Rental Manager
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | pug
-          li#tag
-            | css
-          li#tag
-            | bootstrap
-          li#tag
-            | jquery
-          li#tag
-            | node-js
-          li#tag
-            | express-js
-          li#tag
-            | mongoDB
-          li#tag
-            | AWS-S3
-          li#tag
-            | MVC-model
+     
   .body3
     section.basic_port
       .image
@@ -342,5 +332,5 @@ body
         <i class="fab fa-blogger" style="margin-right: 5px; margin-left:5px;"></i>
       h4 MINHO CHOI &copy;2020-2021
     
-    script(src='js/portfolio0318.js')
+    script(src='js/portfolio0324.js')
     script(src='js/ajax.js')

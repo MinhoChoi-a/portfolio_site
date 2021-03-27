@@ -195,12 +195,14 @@ function myFunction() {
   if (window.pageYOffset > profileSection.offsetHeight+500) {
     contactSection.style.paddingTop='100px';
     basic__port.style.opacity='100%';
+    basic__port.style.zIndex=99;
     setTimeout((()=> port__below.style.opacity='0.7'), 500);
   }
 
   else {
     contactSection.style.paddingTop='0px';
     basic__port.style.opacity='0%';
+    basic__port.style.zIndex=1;
     port__below.style.opacity='0';
   }
 
