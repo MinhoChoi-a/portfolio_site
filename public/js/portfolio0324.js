@@ -209,7 +209,7 @@ function myFunction() {
   if(window.pageYOffset > profileSection.offsetHeight+1000){
      document.querySelector('.learning').style.opacity='100%';
      document.querySelector('.learning').style.marginTop='30px';
-     document.querySelector('.skill_sait').firstChild.style.width='95%';
+     document.querySelector('.skill_sait').firstChild.style.width='100%';
     document.querySelector('.skill_algo').firstChild.style.width='50%';
     document.querySelector('.skill_aws').firstChild.style.width='30%';
     document.querySelector('.skill_code').firstChild.style.width='10%';
