@@ -37,6 +37,26 @@ const height = intro.offsetHeight;
     
 // }
 
+const dayButton = document.querySelector('.light_button')
+const darkButton = document.querySelector('.dark_button')
+
+
+dayButton.addEventListener('click', e => {
+
+  const bodyBack = document.querySelector('body')
+  bodyBack.classList.add('light')
+  bodyBack.classList.remove('dark')
+
+})
+
+darkButton.addEventListener('click', e => {
+
+  const bodyBack = document.querySelector('body')
+  bodyBack.classList.add('dark')
+  bodyBack.classList.remove('light')
+
+})
+
 
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';

@@ -15,7 +15,7 @@ head
   link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
   link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
   
-  link(rel='stylesheet', href='portfolio0324.css')
+  link(rel='stylesheet', href='dark.css')
   meta(name='description' content="MINHO CHOI's Portfolio")
   meta(
       name="keywords"
@@ -29,7 +29,12 @@ head
   
   title MINHO CHOI
 
-body
+body(class="light")
+
+  .mode_button
+    button(class="light_button") day
+    button(class="dark_button") dark
+
   section.intro
     .inner
       #content.animate__animated.animate__bounceInUp
