@@ -1065,11 +1065,19 @@ button {
         width: 500%;
     }
 
-    .intro .inner .title {
+    .dark .intro .inner .title {
         font-size: 30px;
     }
 
-    .intro .inner #content button{
+    .light .intro .inner .title {
+        font-size: 30px;
+    }
+
+    .dark .intro .inner #content button{
+        font-size: 25px;
+    }
+
+    .light .intro .inner #content button{
         font-size: 25px;
     }
 
@@ -1104,7 +1112,13 @@ button {
         width: 100%;
     }
 
-    .body3 .learning {
+    .dark .body3 .learning {
+        margin-top: 40px;
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .light .body3 .learning {
         margin-top: 40px;
         flex-direction: column;
         padding: 15px;
@@ -1116,14 +1130,20 @@ button {
 
     .body3 .size{
         display: flex;
-    }
+    }   
 
     .body4 {
         height: auto;
         margin-top:0;
     }
 
-    .body4 .foot {
+    .dark .body4 .foot {
+        position: relative;
+        height: 150px;
+        padding-top: 25px;
+    }
+
+    .light .body4 .foot {
         position: relative;
         height: 150px;
         padding-top: 25px;
@@ -1137,23 +1157,42 @@ button {
 
     .body3 .navigate__contact {
         position:relative;
-        
         margin-bottom: 0px;
     }
 }
 
 @media screen and (max-width: 450px) {
     
+    .mode_button button{
+        width: 50px;
+        height: 50px;
+    }
+    
+    .mode_button button #mode {
+        font-size: 30px;        
+    }
+
+
     .body3 .skillBox .percent {
         display:none;
     }
     
-    .body4 form table input, textarea {
+    .dark .body4 form table input, .dark textarea {
         width:300px;
     }
-    .body4 form table input .text{
+
+    .light .body4 form table input, .light textarea {
+        width:300px;
+    }
+
+    .light .body4 form table input .text{
         width:300px;
     }   
+
+    .dark .body4 form table input .text{
+        width:300px;
+    }   
+
     .body4 .thanks {
         width:302px;
     }
