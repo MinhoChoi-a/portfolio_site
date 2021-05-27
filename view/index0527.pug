@@ -1,350 +1,351 @@
-head
-  meta(charset='utf-8')
-  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
-  
-  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
-  
-  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-  link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
-  link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
-  
-  link(rel='stylesheet', href='portfolio0527.css')
-  
-  meta(property='og:title' content='Minho Choi')
-  meta(property='og:image' content='//sait-capstone.s3-us-west-2.amazonaws.com/OG.jpg')
-  meta(property='og:description' content='Minho Choi Portfolio')
-  meta(property='og:url' content='//www.minhoproject.studio/')
-  
-  meta(
-      name="keywords"
-      content="portfolio, software developer, web developer, full stack developer, canada, alberta, calgary, java, javascript, react, frontend, backend, fullstack"
-  )
-  
-  link(rel="icon" href="img/fav.ico" type="image/x-icon")
-  
-  title MINHO CHOI
-
-body(class="light")
-
-  .mode_button 
-    button(id="mode_button")
-      i(class="material-icons" id="mode") light_mode
-
-  section.intro
-    .inner
-      #content.animate__animated.animate__bounceInUp
-        .title
-          p Hello World!
-        button View my works
-  
-  .mainNav
-     nav(class="navbar navbar-expand-md")
-        div(class="container-fluid")
-          button(class="navbar-brand") MINHO CHOI
-          
-          button(class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation")
-            span(class="material-icons") menu
-                
-          div(class="navbar-collapse collapse" id="navbarResponsive")
-            ul(class="nav navbar-nav mr-auto mt-2 mt-lg-0 text-uppercase")
-              li(class="nav-item" role="presentation")
-                button.nav-link_work(data-toggle="collapse" data-target="#navbarResponsive") WORKS
-              li(class="nav-item" role="presentation")
-                button.nav-link_profile(data-toggle="collapse" data-target="#navbarResponsive") PROFILE
-              li(class="nav-item" role="presentation")
-                button.nav-link_contact(data-toggle="collapse" data-target="#navbarResponsive") CONTACT                        
-              
-  .body2
-    section.works
-      .carousel
-        button.carousel__button.carousel__button--left.is-hidden
-          img(src='/img/left.svg' alt='')
-        .carousel__track-container
-          ul.carousel__track
-            li.carousel__slide.current
-              .content
-                h1 Text For You Android App
-                p Text show application developed with Kotlin & Jetpack Library
-                p.specific
-                  | Android application to express your mind silently with beautiful background and fonts. It is available at google play only.
-                a(href='https://play.google.com/store/apps/details?id=text.foryou' target="_blank")
-                  button.link
-                    | Go to Site
-            li.carousel__slide.current
-              .content
-                h1 Baking Bunny Order App
-                p Online order web application developed with Node.js & MongoDB
-                p.specific
-                  | Online order application to meet the actual client's requirement, It has e-mail nottification, check delivery fee based on address, and other useful functions.
-                a(href='https://www.bakingbunny.shop/' target="_blank")
-                  button.link
-                    | Go to Site                
-            li.carousel__slide.current
-              .content
-                h1 Calgary Supermarket
-                p REST API developed with Spring boot, MYSQL and AWS
-                p.specific
-                  | Backend system to support CMS and the customer side web page for the supermarket in Calgary. Frontend is developed with React.js.
-                a(href='https://github.com/SAIT-Capstone-Group-2020/Backend_API_SpringBoot' target="_blank")
-                  button.link
-                    | View Code      
-            li.carousel__slide
-              .content
-                h1 YouTube Cooking Chef
-                p Recipe study application developed with React.js & Youtube-api
-                  p.specific
-                    | Users can easily find representative food around the world with this app. This site is developed with React.js and youtube-api
-                a(href='https://youtube-chef.herokuapp.com/' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/MinhoChoi-a/P2-Youtube_Chef' target="_blank")
-                  button.link View Code
-            li.carousel__slide
-              .content
-                h1 All Beer Vibes Web-App
-                p Beer search & suggestion app developed with Node.js & MongoDB
-                p.specific
-                  | Users can easily find the beer with any little keyword, also they can manage their beer history. This site is developed with Untappd-api.
-                a(href='https://all-beer-vibes.herokuapp.com/' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/AllBeerVibes/AllBeerVibes' target="_blank")
-                  button.link View Code
-            li.carousel__slide
-              .content
-                h1 Weather City Web-App
-                p Weather information app developed with Vanilla.js
-                p.specific
-                  | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
-                a(href='https://weather-city-pro.herokuapp.com/' target="_blank")
-                  button.link
-                    | Go to Site
-                a(href='https://github.com/MinhoChoi-a/P3-Weather_App' target="_blank")
-                  button.link View Code            
-           
-        button.carousel__button.carousel__button--right
-          img(src='img/right.svg' alt='')
-        .carousel__nav
-          button.carousel__indicator.current
-          button.carousel__indicator
-          button.carousel__indicator
-          button.carousel__indicator
-          button.carousel__indicator
-          button.carousel__indicator
-         
-    section.work-list
-      ul.list
-        .head.current
-          li
-            button.work__button Text For You
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | Kotlin
-          li#tag
-            | Jetpack Library
-          li#tag
-            | SQLite
-          li#tag
-            | Android Studio
-      
-      ul.list
-        .head
-          li
-            button.work__button Baking Bunny Order
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | pug
-          li#tag
-            | css
-          li#tag
-            | vanilla.js
-          li#tag
-            | node-js
-          li#tag
-            | express-js
-          li#tag
-            | mongoDB
-          li#tag
-            | GoogleMap-api
-      ul.list
-        .head
-          li
-            button.work__button Calgary supermarket
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | spring boot
-          li#tag
-            | mysql
-          li#tag
-            | aws
-          li#tag
-            | react.js
-          li#tag
-            | REST API
-
-      ul.list
-        .head
-          li
-            button.work__button YouTube Chef
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | material-ui
-          li#tag
-            | react.js
-          li#tag
-            | youtube-api
-      
-      ul.list
-        .head
-          li
-            button.work__button All Beer Vibes
-              .clickable more
-                <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | ejs
-          li#tag
-            | css
-          li#tag
-            | javascript
-          li#tag
-            | bootstrap
-          li#tag
-            | passport.js
-          li#tag
-            | express-js
-          li#tag
-            | untappd-api
-      
-      ul.list
-        .head
-          li
-            button.work__button Weather City
-              .clickable more
-                  <i class="fas fa-angle-right"></i>
-        #tag-tag
-          li#tag
-            | html
-          li#tag
-            | css
-          li#tag
-            | vanilla-js
-          li#tag
-            | express-js
-          li#tag
-            | openweathermap-api
-     
-  .body3
-    section.basic_port
-      .image
-        img(src='img/port2.png')
-      .text
-        p.name
-          | MINHO CHOI
-        p With the knowledge of programming and data structuring, I always not only try to solve problems around me but also eager to make a useful application.
-        p I graduated SAIT in April 2021 and I'm waiting for a new opportunity to work as a software developer/engineer.
-        p If you are looking for a passionate and forward-thinking developer, please contact me. I am ready to innovate the world with you :)
-      .below
-        <i class="fas fa-angle-double-down"></i>
-    section.learning
-      ul.list
-        #title
-          li SKILL
-        #description
-          li
-            span#name Language
-            | Java, Kotlin, Javascript, HTML(PUG/EJS/JSP)            
-          li
-            span#name Backend-Framework
-            | Express.js, Spring MVC, Spring boot
-          li
-            span#name Frontend-Framework
-            | React.js
-          li
-            span#name Database
-            | MYSQL, MongoDB, SQLite
-          li
-            span#name Adobe CS
-            | Photoshop, Premiere Pro, XD
-          li
-            span#name Amazon Web Service
-            | EC2, RDS, S3, SES, etc.
-      ul.list
-        #title
-          li LEARNING
-        #description_p
-          li.skillBox
-            p 
-              a(href='https://www.sait.ca/programs-and-courses/full-time-studies/diplomas/information-technology' target="_blank") SAIT - Software Development Diploma
-            p.percent 100%
-            .skill
-              .skill_sait
-                .skill_level
-          li.skillBox
-            p 
-              a(href='https://www.coursera.org/specializations/data-structures-algorithms?' target="_blank") Coursera - Data Structure and Algorithms
-            p.percent 50%
-            .skill
-              .skill_algo
-                .skill_level
-          li.skillBox
-            p 
-              a(href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank") AWS Certified Developer - Associate
-            p.percent 30%
-            .skill
-              .skill_aws
-                .skill_level
-          li.skillBox
-            p Coding &amp; Programming
-            p.percent Never Ending
-            .skill
-              .skill_code
-                .skill_level
-
-  .body4
-    section.contact
-      h1 CONTACT
-      h4 Have a question or want to work together?
-    form.contact_form(method='POST' action='')
-      table.submit
-        tr
-          td
-            input.name(type='text' name='name' placeholder='Name' required)
-        tr
-          td
-            input.email(type='text' name='email' placeholder='E-mail' required)
-        tr
-          td
-            textarea.text(placeholder='Message' name='Message' rows='4' cols='50' required)
-      button.send(type='submit') Send
-
-    section.afterEmail
-
-    .foot
-      a(href='https://www.linkedin.com/in/minhochoi/' target="_blank")
-        <i class="fab fa-linkedin-in" style="margin-right: 5px; margin-left:5px;"></i>
-      a(href='https://github.com/MinhoChoi-a' target="_blank")
-        <i class="fab fa-github" style="margin-right: 5px; margin-left:5px;"></i>
-      a(href='https://www.youtube.com/channel/UCkfm-dWpRnvI9RPwhgFk7RA' target="_blank")
-        <i class="fab fa-youtube" style="margin-right: 5px; margin-left:5px;"></i>
-      a(href='https://minhochoi-a.blogspot.com' target="_blank")
-        <i class="fab fa-blogger" style="margin-right: 5px; margin-left:5px;"></i>
-      h4 MINHO CHOI &copy;2020-2021
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     
-    script(src='js/portfolio0527.js')
-    script(src='js/ajax.js')
+    link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css')
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    link(href='https://fonts.googleapis.com/icon?family=Material+Icons' rel='stylesheet')
+    link(href='https://fonts.googleapis.com/css2?family=Raleway' rel='stylesheet')
+    
+    link(rel='stylesheet', href='portfolio0527.css')
+    
+    meta(prefix="og:https://ogp.me/ns#" property='og:title' content='Minho Choi')
+    meta(prefix="og:https://ogp.me/ns#" property='og:image' content='https://sait-capstone.s3-us-west-2.amazonaws.com/OG.jpg')
+    meta(prefix="og:https://ogp.me/ns#" property='og:description' content='Minho Choi Portfolio')
+    meta(prefix="og:https://ogp.me/ns#" property='og:url' content='https://www.minhoproject.studio/')
+    
+    meta(
+        name="keywords"
+        content="portfolio, software developer, web developer, full stack developer, canada, alberta, calgary, java, javascript, react, frontend, backend, fullstack"
+    )
+    
+    link(rel="icon" href="img/fav.ico" type="image/x-icon")
+    
+    title MINHO CHOI
+
+  body(class="light")
+
+    .mode_button 
+      button(id="mode_button")
+        i(class="material-icons" id="mode") light_mode
+
+    section.intro
+      .inner
+        #content.animate__animated.animate__bounceInUp
+          .title
+            p Hello World!
+          button View my works
+    
+    .mainNav
+      nav(class="navbar navbar-expand-md")
+          div(class="container-fluid")
+            button(class="navbar-brand") MINHO CHOI
+            
+            button(class="navbar-toggler" data-toggle="collapse" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation")
+              span(class="material-icons") menu
+                  
+            div(class="navbar-collapse collapse" id="navbarResponsive")
+              ul(class="nav navbar-nav mr-auto mt-2 mt-lg-0 text-uppercase")
+                li(class="nav-item" role="presentation")
+                  button.nav-link_work(data-toggle="collapse" data-target="#navbarResponsive") WORKS
+                li(class="nav-item" role="presentation")
+                  button.nav-link_profile(data-toggle="collapse" data-target="#navbarResponsive") PROFILE
+                li(class="nav-item" role="presentation")
+                  button.nav-link_contact(data-toggle="collapse" data-target="#navbarResponsive") CONTACT                        
+                
+    .body2
+      section.works
+        .carousel
+          button.carousel__button.carousel__button--left.is-hidden
+            img(src='/img/left.svg' alt='')
+          .carousel__track-container
+            ul.carousel__track
+              li.carousel__slide.current
+                .content
+                  h1 Text For You Android App
+                  p Text show application developed with Kotlin & Jetpack Library
+                  p.specific
+                    | Android application to express your mind silently with beautiful background and fonts. It is available at google play only.
+                  a(href='https://play.google.com/store/apps/details?id=text.foryou' target="_blank")
+                    button.link
+                      | Go to Site
+              li.carousel__slide.current
+                .content
+                  h1 Baking Bunny Order App
+                  p Online order web application developed with Node.js & MongoDB
+                  p.specific
+                    | Online order application to meet the actual client's requirement, It has e-mail nottification, check delivery fee based on address, and other useful functions.
+                  a(href='https://www.bakingbunny.shop/' target="_blank")
+                    button.link
+                      | Go to Site                
+              li.carousel__slide.current
+                .content
+                  h1 Calgary Supermarket
+                  p REST API developed with Spring boot, MYSQL and AWS
+                  p.specific
+                    | Backend system to support CMS and the customer side web page for the supermarket in Calgary. Frontend is developed with React.js.
+                  a(href='https://github.com/SAIT-Capstone-Group-2020/Backend_API_SpringBoot' target="_blank")
+                    button.link
+                      | View Code      
+              li.carousel__slide
+                .content
+                  h1 YouTube Cooking Chef
+                  p Recipe study application developed with React.js & Youtube-api
+                    p.specific
+                      | Users can easily find representative food around the world with this app. This site is developed with React.js and youtube-api
+                  a(href='https://youtube-chef.herokuapp.com/' target="_blank")
+                    button.link
+                      | Go to Site
+                  a(href='https://github.com/MinhoChoi-a/P2-Youtube_Chef' target="_blank")
+                    button.link View Code
+              li.carousel__slide
+                .content
+                  h1 All Beer Vibes Web-App
+                  p Beer search & suggestion app developed with Node.js & MongoDB
+                  p.specific
+                    | Users can easily find the beer with any little keyword, also they can manage their beer history. This site is developed with Untappd-api.
+                  a(href='https://all-beer-vibes.herokuapp.com/' target="_blank")
+                    button.link
+                      | Go to Site
+                  a(href='https://github.com/AllBeerVibes/AllBeerVibes' target="_blank")
+                    button.link View Code
+              li.carousel__slide
+                .content
+                  h1 Weather City Web-App
+                  p Weather information app developed with Vanilla.js
+                  p.specific
+                    | Users can get the weather info based on user&apos;s location, also they can search the city over the world. This site&apos;s info is based on openweathermap-api
+                  a(href='https://weather-city-pro.herokuapp.com/' target="_blank")
+                    button.link
+                      | Go to Site
+                  a(href='https://github.com/MinhoChoi-a/P3-Weather_App' target="_blank")
+                    button.link View Code            
+            
+          button.carousel__button.carousel__button--right
+            img(src='img/right.svg' alt='')
+          .carousel__nav
+            button.carousel__indicator.current
+            button.carousel__indicator
+            button.carousel__indicator
+            button.carousel__indicator
+            button.carousel__indicator
+            button.carousel__indicator
+          
+      section.work-list
+        ul.list
+          .head.current
+            li
+              button.work__button Text For You
+                .clickable more
+                    <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | Kotlin
+            li#tag
+              | Jetpack Library
+            li#tag
+              | SQLite
+            li#tag
+              | Android Studio
+        
+        ul.list
+          .head
+            li
+              button.work__button Baking Bunny Order
+                .clickable more
+                    <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | pug
+            li#tag
+              | css
+            li#tag
+              | vanilla.js
+            li#tag
+              | node-js
+            li#tag
+              | express-js
+            li#tag
+              | mongoDB
+            li#tag
+              | GoogleMap-api
+        ul.list
+          .head
+            li
+              button.work__button Calgary supermarket
+                .clickable more
+                    <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | spring boot
+            li#tag
+              | mysql
+            li#tag
+              | aws
+            li#tag
+              | react.js
+            li#tag
+              | REST API
+
+        ul.list
+          .head
+            li
+              button.work__button YouTube Chef
+                .clickable more
+                    <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | material-ui
+            li#tag
+              | react.js
+            li#tag
+              | youtube-api
+        
+        ul.list
+          .head
+            li
+              button.work__button All Beer Vibes
+                .clickable more
+                  <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | ejs
+            li#tag
+              | css
+            li#tag
+              | javascript
+            li#tag
+              | bootstrap
+            li#tag
+              | passport.js
+            li#tag
+              | express-js
+            li#tag
+              | untappd-api
+        
+        ul.list
+          .head
+            li
+              button.work__button Weather City
+                .clickable more
+                    <i class="fas fa-angle-right"></i>
+          #tag-tag
+            li#tag
+              | html
+            li#tag
+              | css
+            li#tag
+              | vanilla-js
+            li#tag
+              | express-js
+            li#tag
+              | openweathermap-api
+      
+    .body3
+      section.basic_port
+        .image
+          img(src='img/port2.png')
+        .text
+          p.name
+            | MINHO CHOI
+          p With the knowledge of programming and data structuring, I always not only try to solve problems around me but also eager to make a useful application.
+          p I graduated SAIT in April 2021 and I'm waiting for a new opportunity to work as a software developer/engineer.
+          p If you are looking for a passionate and forward-thinking developer, please contact me. I am ready to innovate the world with you :)
+        .below
+          <i class="fas fa-angle-double-down"></i>
+      section.learning
+        ul.list
+          #title
+            li SKILL
+          #description
+            li
+              span#name Language
+              | Java, Kotlin, Javascript, HTML(PUG/EJS/JSP)            
+            li
+              span#name Backend-Framework
+              | Express.js, Spring MVC, Spring boot
+            li
+              span#name Frontend-Framework
+              | React.js
+            li
+              span#name Database
+              | MYSQL, MongoDB, SQLite
+            li
+              span#name Adobe CS
+              | Photoshop, Premiere Pro, XD
+            li
+              span#name Amazon Web Service
+              | EC2, RDS, S3, SES, etc.
+        ul.list
+          #title
+            li LEARNING
+          #description_p
+            li.skillBox
+              p 
+                a(href='https://www.sait.ca/programs-and-courses/full-time-studies/diplomas/information-technology' target="_blank") SAIT - Software Development Diploma
+              p.percent 100%
+              .skill
+                .skill_sait
+                  .skill_level
+            li.skillBox
+              p 
+                a(href='https://www.coursera.org/specializations/data-structures-algorithms?' target="_blank") Coursera - Data Structure and Algorithms
+              p.percent 50%
+              .skill
+                .skill_algo
+                  .skill_level
+            li.skillBox
+              p 
+                a(href='https://aws.amazon.com/certification/certified-developer-associate/' target="_blank") AWS Certified Developer - Associate
+              p.percent 30%
+              .skill
+                .skill_aws
+                  .skill_level
+            li.skillBox
+              p Coding &amp; Programming
+              p.percent Never Ending
+              .skill
+                .skill_code
+                  .skill_level
+
+    .body4
+      section.contact
+        h1 CONTACT
+        h4 Have a question or want to work together?
+      form.contact_form(method='POST' action='')
+        table.submit
+          tr
+            td
+              input.name(type='text' name='name' placeholder='Name' required)
+          tr
+            td
+              input.email(type='text' name='email' placeholder='E-mail' required)
+          tr
+            td
+              textarea.text(placeholder='Message' name='Message' rows='4' cols='50' required)
+        button.send(type='submit') Send
+
+      section.afterEmail
+
+      .foot
+        a(href='https://www.linkedin.com/in/minhochoi/' target="_blank")
+          <i class="fab fa-linkedin-in" style="margin-right: 5px; margin-left:5px;"></i>
+        a(href='https://github.com/MinhoChoi-a' target="_blank")
+          <i class="fab fa-github" style="margin-right: 5px; margin-left:5px;"></i>
+        a(href='https://www.youtube.com/channel/UCkfm-dWpRnvI9RPwhgFk7RA' target="_blank")
+          <i class="fab fa-youtube" style="margin-right: 5px; margin-left:5px;"></i>
+        a(href='https://minhochoi-a.blogspot.com' target="_blank")
+          <i class="fab fa-blogger" style="margin-right: 5px; margin-left:5px;"></i>
+        h4 MINHO CHOI &copy;2020-2021
+      
+      script(src='js/portfolio0527.js')
+      script(src='js/ajax.js')
