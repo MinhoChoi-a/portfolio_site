@@ -27,19 +27,40 @@ html, .light{
     background-position: center;    
 }
 
+button {
+    outline : none;
+}
+
+
 .mode_button {
-    
-    display: flex;
     z-index: 99;
     position:fixed;
     right: 0;
     bottom: 0;
     margin-right: 20px;
-    margin-bottom: 20px;    
+    margin-bottom: 20px;        
 }
 
-button {
-    outline : none;
+.mode_button button{
+    width: 65px;
+    height: 65px;
+    background: rgba(255,255,255, 0.3);
+    box-shadow:5px 5px rgba(0,0,0,0.2);    
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);    
+    border-radius: 50%;
+    border-style: none;
+    transition: color ease-in-out 1s;    
+}
+
+.mode_button button:focus{
+    outline: 0;
+}
+
+.mode_button button #mode {
+    font-size: 40px;
+    color: whitesmoke;
+    transition: color ease-in-out 1s;    
 }
 
 .intro {
@@ -106,7 +127,6 @@ button {
 .mainNav {
     z-index: 999;
     display: none;
- 
 }
 
 .privacyNav {
@@ -135,12 +155,12 @@ button {
     height: 50px;
  }
 
-.navbar span {
+.light .navbar span {
     color: var(--bg);
     font-size: 40px;
 }
 
-.light .navbar .navbar-brand, .navbar button {
+.light .navbar .navbar-brand, .light .navbar button {
     color: var(--bg);
     font-weight: bolder;
 }
@@ -237,7 +257,7 @@ button {
     
 }
 
-.carousel__button:hover {
+.light .carousel__button:hover {
     background: rgba(0,0,0,0.2);
     transition-duration: 0.5s;
 }
@@ -258,7 +278,7 @@ button {
     padding: 10px 0;
 }
 
-.carousel__indicator {
+.light .carousel__indicator {
     border: 0;
     border-radius: 50%;
     width: 15px;
@@ -380,8 +400,6 @@ button {
 
 
 
-
-
 .body2 .navigate__profile {
     
     width:100%;
@@ -400,13 +418,13 @@ button {
     
 }
 
-.body2 .navigate__profile p{
+.light .body2 .navigate__profile p{
     margin:0;
     font-size: 25px;
     color: var(--text_main);
 }
 
-.body2 .navigate__profile span {
+.light .body2 .navigate__profile span {
     margin:0;
     font-size: 35px;
     color: var(--text_main);
@@ -449,7 +467,7 @@ button {
     
 }
 
-.body3 .basic_port .text{
+.light .body3 .basic_port .text{
     
     padding: 20px;
     width: 100%;
@@ -461,7 +479,7 @@ button {
     border-radius: 25px;    
 }
 
-.body3 .basic_port .text .name{
+.light .body3 .basic_port .text .name{
     color: var(--accent_main);
     font-weight: bolder;
     font-size: 20px;    
@@ -471,7 +489,7 @@ button {
     margin-bottom: 0px;
 }
 
-.body3 .below {
+.light .body3 .below {
     font-size: 50px;
     margin-top: 20px;
     color: var(--text_main);
@@ -482,7 +500,7 @@ button {
 }
 
 
-.body3 .learning {    
+.light .body3 .learning {    
     width:80%;
     margin-top: 0px;
     display: flex;
@@ -507,7 +525,7 @@ button {
     padding:0;   
 }
 
-.body3 .learning #title {
+.light .body3 .learning #title {
     list-style: none;
     width: 100%;
     font-size: 20px;
@@ -516,14 +534,15 @@ button {
 }
 
 .body3 .learning #description, #description_p{
-    margin-top: 15px;
+    margin-top: 15px;    
 }
 
-.body3 .learning #description li, #description_p li {
+.light .body3 .learning #description li, .light #description_p li {
     margin-bottom: 10px;
+    color: var(--text_main);
 }
 
-.body3 .learning #description li #name {
+.light .body3 .learning #description li #name {
     font-weight: bolder;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -531,9 +550,8 @@ button {
     color: var(--accent_main);
 }
 
-.body3 .skillBox a {
+.light .body3 .skillBox a {
     outline: none;
-    
     color: var(--text_main);
 }
 
@@ -550,13 +568,13 @@ button {
     top: -25px;
 }
 
-.body3 .skill {
+.light .body3 .skill {
     background: white;
     text-align: right;
     border-radius: 5px;
 }
 
-.body3 .skill_level {
+.light .body3 .skill_level {
     background: var(--text_main);
     width:100%;
     height:10px;
@@ -587,14 +605,14 @@ button {
     
 }
 
-.body3 .navigate__contact p{
+.light .body3 .navigate__contact p{
     margin:0;
     font-size: 25px;
     color: var(--text_main);
 }
 
 
-.body3 .navigate__contact span {
+.light .body3 .navigate__contact span {
     margin:0;
     font-size: 35px;
     color: var(--text_main);
@@ -641,7 +659,7 @@ button {
     -webkit-backdrop-filter: blur(8px);
 }
 
-.body4 form table input, textarea {
+.light .body4 form table input, .light textarea {
     width: 350px;
     overflow: auto;
     border: none;
@@ -655,7 +673,7 @@ button {
     height: 350px;
 }
 
-.body4 form button{
+.light .body4 form button{
     margin-top: 15px;
     align-self: flex-end;
     border: none;
@@ -666,12 +684,12 @@ button {
     outline:none;
 }
 
-.body4 form button:hover {
+.light .body4 form button:hover {
     box-shadow: 5px 5px var(--accent_main);
     transition: ease-in-out 0.3s;
 }
 
-.body4 .thanks
+.light .body4 .thanks
 {
     margin-top: 50px;
     background-color: rgba(255,255,255, 0.6);
@@ -688,7 +706,7 @@ button {
 }
 
 
-.body4 .foot {
+.light .body4 .foot {
     position:absolute;
     width: 100%;
     background-color: rgba(2, 34, 73, 0.8);
@@ -698,12 +716,12 @@ button {
     bottom:0;
 }
 
-.body4 .foot i {
+.light .body4 .foot i {
     font-size: 50px;
     color: var(--bg)
 }
 
-.body4 .foot i:hover {
+.light .body4 .foot i:hover {
     color: var(--accent_main);
     transition: ease-in-out 0.5s;
 }
@@ -871,45 +889,15 @@ button {
     color: darkgray;
 }
 
-.body2 .navigate__profile p{
-    margin:0;
-    font-size: 25px;
-    color: var(--text_main);
-}
-
-.body2 .navigate__profile span {
-    margin:0;
-    font-size: 35px;
-    color: var(--text_main);
-}
-
-.body2 .specific {
-    display: flex;
-}
-
-
-.body3 {
-    height: 100vh;
-    padding-top: 0px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition-duration: 1s;   
-}
-
-.body3 .basic_port .text{
+.dark .body3 .basic_port .text{
     
     padding: 20px;
-    width: 100%;
-
+    width: 100%;    
     background: linear-gradient(45deg, rgba(185,185,185,0.2) 0%, rgba(255,255,255,0.2) 100%);
-    box-shadow: 10px 10px rgba(0,0,0,0.15);
-    
     border-radius: 25px;    
 }
 
-.body3 .basic_port .text .name{
+.dark .body3 .basic_port .text .name{
     color: var(--accent_main);
     font-weight: bolder;
     font-size: 20px;    
@@ -927,7 +915,6 @@ button {
     align-self: center;
     opacity: 0;
     transition: 0.5s ease-in;
-
 }
 
 
@@ -950,29 +937,15 @@ button {
     transition-duration: 1s;
 }
 
-.body3 .learning ul{
-    list-style: none;
-    width: 100%;
-    padding:0;   
-}
-
-.body3 .learning #title {
+.dark .body3 .learning #title {
     list-style: none;
     width: 100%;
     font-size: 20px;
     font-weight: bolder;
-    color: var(--text_main);    
+    color: whitesmoke;
 }
 
-.body3 .learning #description, #description_p{
-    margin-top: 15px;
-}
-
-.body3 .learning #description li, #description_p li {
-    margin-bottom: 10px;
-}
-
-.body3 .learning #description li #name {
+.dark .body3 .learning #description li #name {
     font-weight: bolder;
     margin-bottom: 10px;
     margin-right: 10px;
@@ -980,33 +953,29 @@ button {
     color: var(--accent_main);
 }
 
-.body3 .skillBox a {
+.dark .body3 .learning #description, #description_p{
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+.body3 .learning #description li, #description_p li {
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.dark .body3 .skillBox a {
     outline: none;
-    
-    color: var(--text_main);
+    color: whitesmoke;
 }
 
-
-.body3 .skillBox p {
-    margin: 0 0 1px;
-    padding: 0;    
-}
-
-.body3 .skillBox p:nth-child(2) {
-    
-    float: right;
-    position: relative;
-    top: -25px;
-}
-
-.body3 .skill {
-    background: white;
+.dark .body3 .skill {
+    background: none;
     text-align: right;
     border-radius: 5px;
 }
 
-.body3 .skill_level {
-    background: var(--text_main);
+.dark .body3 .skill_level {
+    background: darkgray;
     width:100%;
     height:10px;
     width:0%;
@@ -1014,116 +983,55 @@ button {
     border-radius: 5px;
 }
 
-
-.body3 .size{
-    display: none;
-}
-
-.body3 .navigate__contact {
-    
-    width:100%;
-    margin:auto;
-    bottom:0;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position:fixed;
-    background: none;
-    border: none;
-    outline:none;
-    cursor: pointer;
-    
-}
-
-.body3 .navigate__contact p{
+.dark .body3 .navigate__contact p{
     margin:0;
     font-size: 25px;
-    color: var(--text_main);
+    color: whitesmoke;
 }
 
 
-.body3 .navigate__contact span {
+.dark .body3 .navigate__contact span {
     margin:0;
     font-size: 35px;
     color: var(--text_main);
 }
 
-
-.body4 {
-    height: 100vh;
-    padding-top: 0px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 400px;
-
-    opacity: 0%;
-    transition-duration: 1s;
+.dark .body4 .contact {
+    color: whitesmoke;
 }
 
-.body4_privacy {
-    width: 100%;
-    background: #c4e6e5;
-    position: relative;
-    display: block;
-    align-items: center;
-    text-align: center;
-    
-}
-
-.body4 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
-}
-
-.body4 form table{
-    width: 100%;
-    margin: 0;
-    box-shadow: 10px 10px rgba(0,0,0,0.15);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-}
-
-.body4 form table input, textarea {
+.dark .body4 form table input, textarea {
     width: 350px;
     overflow: auto;
     border: none;
-    background: rgba(255,255,255, 0.8);
-    color: var(--text_main);
+    background: linear-gradient(45deg, rgba(185,185,185,0.2) 0%, rgba(255,255,255,0.2) 100%);
+    box-shadow: 10px 10px rgba(0,0,0,0.15);
+    color: whitesmoke;
     padding: 5px;
     outline: none;
 }
 
-.body4 form table input .text{
-    height: 350px;
-}
-
-.body4 form button{
+.dark .body4 form button{
     margin-top: 15px;
     align-self: flex-end;
     border: none;
-    background-color: var(--text_main);
-    padding: 2px 10px 2px 10px;
-    color: var(--bg);
-    box-shadow: 5px 5px rgba(0,0,0,0.2);    
+    background: linear-gradient(45deg, rgba(185,185,185,0.3) 0%, rgba(255,255,255,0.3) 100%);
+    color: whitesmoke;
+    box-shadow: 5px 5px rgba(0,0,0,0.2);        
+    padding: 2px 10px 2px 10px;    
     outline:none;
 }
 
-.body4 form button:hover {
-    box-shadow: 5px 5px var(--accent_main);
+
+.dark .body4 form button:hover {
+    box-shadow: 3px 3px rgba(255,255,255,0.2);
     transition: ease-in-out 0.3s;
 }
 
-.body4 .thanks
+.dark .body4 .thanks
 {
     margin-top: 50px;
-    background-color: rgba(255,255,255, 0.6);
+    background: linear-gradient(45deg, rgba(185,185,185,0.2) 0%, rgba(255,255,255,0.2) 100%);
     width: 352px;
     height: 178.4px;
     box-shadow: 5px 5px rgba(0,0,0,0.2);
@@ -1131,75 +1039,25 @@ button {
     align-items: center;
 }
 
-.body4 .thanks h1
-{
-    font-size: 20px;
-}
-
-
-.body4 .foot {
+.dark .body4 .foot {
     position:absolute;
     width: 100%;
     background-color: rgba(2, 34, 73, 0.8);
-    color: var(--bg);
+    color: darkgray;
     padding: 50px;
     margin-top: 50px;
     bottom:0;
 }
 
-.body4 .foot i {
+.dark .body4 .foot i {
     font-size: 50px;
-    color: var(--bg)
+    color: darkgray;
 }
 
-.body4 .foot i:hover {
+.dark .body4 .foot i:hover {
     color: var(--accent_main);
     transition: ease-in-out 0.5s;
 }
-
-.body4 .foot .middle {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.body4 .foot h4 {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-
-.body4_privacy .foot {
-    position: relative;
-    width: 100%;
-    height: 200px;
-    background-color: var(--text_main);
-    color: var(--bg);
-    padding: 50px;
-}
-
-
-.body4_privacy .foot i {
-    font-size: 50px;
-    color: var(--bg)
-}
-
-.body4_privacy .foot i:hover {
-    color: var(--accent_main);
-    transition: ease-in-out 0.5s;
-}
-
-.body4_privacy .foot .middle {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.body4_privacy .foot h4 {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-
-
 
 /*media */
 @media screen and (max-width: 700px) {

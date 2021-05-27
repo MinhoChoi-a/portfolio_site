@@ -37,26 +37,32 @@ const height = intro.offsetHeight;
     
 // }
 
-const dayButton = document.querySelector('.light_button')
-const darkButton = document.querySelector('.dark_button')
+const mode_button = document.querySelector('#mode_button');
+const mode_button_icon = document.querySelector('#mode');
 
+mode_button.addEventListener('click', e => {
 
-dayButton.addEventListener('click', e => {
+  var check = mode_button_icon.innerHTML;
 
-  const bodyBack = document.querySelector('body')
-  bodyBack.classList.add('light')
-  bodyBack.classList.remove('dark')
+  if(check === "light_mode") {
+    mode_button_icon.innerHTML = "dark_mode";
+    mode_button_icon.style.color = "darkgray";
+    const body = document.querySelector('body')
+    body.classList.remove('light')
+    body.classList.add('dark')
+  }
+
+  else {
+    mode_button_icon.innerHTML = "light_mode";
+    mode_button_icon.style.color = "whitesmoke";
+    const body = document.querySelector('body')
+    body.classList.add('light')
+    body.classList.remove('dark')
+  }
+  
+  
 
 })
-
-darkButton.addEventListener('click', e => {
-
-  const bodyBack = document.querySelector('body')
-  bodyBack.classList.add('dark')
-  bodyBack.classList.remove('light')
-
-})
-
 
 const setSlidePosition = (slide, index) => {
     slide.style.left = slideWidth * index + 'px';
